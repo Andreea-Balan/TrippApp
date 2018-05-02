@@ -22,9 +22,13 @@ class PostCollectionViewCell: UICollectionViewCell {
     }
     
     func setPost(post:Post) {
+        
+        ImageService.getImage(withURL: post.photoURL) { image in
+            self.postPhoto.image = image
+        }
         category.text = post.category
         title.text = post.title
-        price.text = String(post.price) + "per person"
+        price.text = String(post.price) + "$ per person"
         city.text = post.location
     }
 

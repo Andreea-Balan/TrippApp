@@ -23,12 +23,14 @@
 		45B6EEE02068224800A380F5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B6EEDF2068224800A380F5 /* SignUpViewController.swift */; };
 		48829C9505F15414C909A25A /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CA2A3ABD4B577E6D955BCB /* Pods_TravelApp.framework */; };
 		83E098DBDD2FC25E47F79D88 /* Pods_TravelAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D02B2AD37E97DE27473A628 /* Pods_TravelAppTests.framework */; };
-		B43025D4207CDD5200610293 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B43025D3207CDD5100610293 /* GoogleService-Info.plist */; };
 		B45AD031207F9A220056481E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD02F207F9A220056481E /* PostTableViewCell.swift */; };
 		B45AD032207F9A220056481E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45AD030207F9A220056481E /* PostTableViewCell.xib */; };
 		B45AD035207FEE120056481E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD034207FEE120056481E /* Post.swift */; };
 		B46C5DED2083F13E00BCA34E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5DEC2083F13E00BCA34E /* User.swift */; };
 		B46C5DF02083F33A00BCA34E /* userService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5DEF2083F33A00BCA34E /* userService.swift */; };
+		B46C5DF9208604A500BCA34E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46C5DF8208604A500BCA34E /* GoogleService-Info.plist */; };
+		B46C5DFB20860C6000BCA34E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5DFA20860C6000BCA34E /* ImageService.swift */; };
+		B4808E342099B0AF008BE191 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */; };
 		B4BF376F2081FC4300FDA0BE /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */; };
 		B4BF37702081FC4300FDA0BE /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */; };
 		B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF37712082021500FDA0BE /* FirstViewController.swift */; };
@@ -81,14 +83,14 @@
 		58CA2A3ABD4B577E6D955BCB /* Pods_TravelApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravelApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9877A52ADDAC22ED10C91ADB /* Pods-TravelAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAppTests/Pods-TravelAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A194D28D64BD01E496ABE4D6 /* Pods-TravelAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAppUITests/Pods-TravelAppUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B43025D3207CDD5100610293 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B45AD02F207F9A220056481E /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		B45AD030207F9A220056481E /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		B45AD034207FEE120056481E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		B46C5DEC2083F13E00BCA34E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B46C5DEF2083F33A00BCA34E /* userService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userService.swift; sourceTree = "<group>"; };
-		B46C5DF32085F61500BCA34E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B46C5DF52085F66A00BCA34E /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B46C5DF8208604A500BCA34E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "TravelApp/Views/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		B46C5DFA20860C6000BCA34E /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
 		B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4BF37712082021500FDA0BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -159,7 +161,6 @@
 				4594C76C205EEFEC00E3AA5B /* ViewController.swift */,
 				4594C771205EEFEC00E3AA5B /* Assets.xcassets */,
 				4594C776205EEFEC00E3AA5B /* Info.plist */,
-				B46C5DF32085F61500BCA34E /* GoogleService-Info.plist */,
 			);
 			path = TravelApp;
 			sourceTree = "<group>";
@@ -185,14 +186,10 @@
 		4594C798205EF09600E3AA5B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B4808E322099AF43008BE191 /* Post */,
 				B46C5DF42085F65100BCA34E /* ToDelete */,
 				B46C5DF12085F57100BCA34E /* Authentication */,
-				B43025D3207CDD5100610293 /* GoogleService-Info.plist */,
 				459620B5206D1D9500E342B6 /* HomeViewController.swift */,
-				B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */,
-				B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */,
-				B4BF37712082021500FDA0BE /* FirstViewController.swift */,
-				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -250,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				B46C5DEF2083F33A00BCA34E /* userService.swift */,
+				B46C5DFA20860C6000BCA34E /* ImageService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -257,6 +255,7 @@
 		B46C5DF12085F57100BCA34E /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+				B46C5DF8208604A500BCA34E /* GoogleService-Info.plist */,
 				4594C7A3205F0F0900E3AA5B /* LogInViewController.swift */,
 				4594C79B205EF1FF00E3AA5B /* MenuViewController.swift */,
 				4594C799205EF0BF00E3AA5B /* InitialViewController.swift */,
@@ -278,10 +277,21 @@
 			isa = PBXGroup;
 			children = (
 				B45AD030207F9A220056481E /* PostTableViewCell.xib */,
-				B46C5DF52085F66A00BCA34E /* GoogleService-Info.plist */,
 				B45AD02F207F9A220056481E /* PostTableViewCell.swift */,
 			);
 			path = ToDelete;
+			sourceTree = "<group>";
+		};
+		B4808E322099AF43008BE191 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */,
+				B4BF37712082021500FDA0BE /* FirstViewController.swift */,
+				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
+				B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */,
+				B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,9 +413,9 @@
 				4594C775205EEFEC00E3AA5B /* LaunchScreen.storyboard in Resources */,
 				B45AD032207F9A220056481E /* PostTableViewCell.xib in Resources */,
 				B4BF37702081FC4300FDA0BE /* PostCollectionViewCell.xib in Resources */,
-				B43025D4207CDD5200610293 /* GoogleService-Info.plist in Resources */,
 				4594C772205EEFEC00E3AA5B /* Assets.xcassets in Resources */,
 				4594C770205EEFEC00E3AA5B /* Main.storyboard in Resources */,
+				B46C5DF9208604A500BCA34E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,6 +599,7 @@
 				B45AD031207F9A220056481E /* PostTableViewCell.swift in Sources */,
 				4594C79A205EF0BF00E3AA5B /* InitialViewController.swift in Sources */,
 				4594C7A2205EFA2800E3AA5B /* Extensions.swift in Sources */,
+				B4808E342099B0AF008BE191 /* PostDetailsViewController.swift in Sources */,
 				B45AD035207FEE120056481E /* Post.swift in Sources */,
 				B46C5DED2083F13E00BCA34E /* User.swift in Sources */,
 				45B6EEE02068224800A380F5 /* SignUpViewController.swift in Sources */,
@@ -599,6 +610,7 @@
 				4594C76D205EEFEC00E3AA5B /* ViewController.swift in Sources */,
 				4594C76B205EEFEC00E3AA5B /* AppDelegate.swift in Sources */,
 				B46C5DF02083F33A00BCA34E /* userService.swift in Sources */,
+				B46C5DFB20860C6000BCA34E /* ImageService.swift in Sources */,
 				4594C79C205EF1FF00E3AA5B /* MenuViewController.swift in Sources */,
 				B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */,
 				B4BF377620823ACA00FDA0BE /* NewPostViewController.swift in Sources */,
@@ -772,7 +784,7 @@
 				DEVELOPMENT_TEAM = 9VJN5QFXAE;
 				INFOPLIST_FILE = TravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hs.TravelApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TravelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -788,7 +800,7 @@
 				DEVELOPMENT_TEAM = 9VJN5QFXAE;
 				INFOPLIST_FILE = TravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hs.TravelApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.TravelApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

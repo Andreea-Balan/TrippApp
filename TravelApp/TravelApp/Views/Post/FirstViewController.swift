@@ -9,9 +9,18 @@
 import UIKit
 import  Firebase
 
+
 class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+    
+    var postImage: UIImage?
+    var postCategory: String = ""
+    var postTitle: String = ""
+    var postCity: String = ""
+    var postPrice: String = ""
+    
     @IBOutlet weak var collectionView: UICollectionView!
     var posts = [Post]()
+    var tappedPost: Post?
     
     
     @IBAction func handleLogout(_target:UIBarButtonItem){
@@ -83,14 +92,27 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectioncell", for: indexPath) as! PostCollectionViewCell
+        
         cell.setPost(post: posts[indexPath.row])
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let cell = collectionView.cellForItem(at: indexPath)
-        cell?.layer.borderColor = UIColor.gray.cgColor
-        cell?.layer.borderWidth = 2
+        let cell = collectionView.cellForItem(at: indexPath) as! PostCollectionViewCell
+        
+        cell.layer.borderColor = UIColor.gray.cgColor
+        cell.layer.borderWidth = 2
+        
+       /* postImage = cell.postPhoto.image
+        postCategory = cell.category.text!
+        postTitle = cell.title.text!
+        postCity = cell.city.text!
+        postPrice = cell.price.text!*/
+        
+        tappedPost = posts[indexPath.row]
+        
+        
+        self.performSegue(withIdentifier: "goToDetails", sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
@@ -99,6 +121,23 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
         cell?.layer.borderWidth = 0.5
     }
    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if (segue.identifier == "goToDetails") {
+         //   let cell = sender as! PostCollectionViewCell
+         
+            let detailView = segue.destination as! PostDetailsViewController
+            
+            /*detailView.postImage = postImage
+            detailView.postCity = postCity
+            detailView.postCategory = postCategory
+            detailView.postPrice = postCity
+            detailView.postTitle = postTitle
+            */
+            
+            detailView.post = tappedPost
+        }
+    }
   
     
 }
