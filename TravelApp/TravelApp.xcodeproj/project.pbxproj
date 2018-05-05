@@ -31,6 +31,8 @@
 		B46C5DF9208604A500BCA34E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B46C5DF8208604A500BCA34E /* GoogleService-Info.plist */; };
 		B46C5DFB20860C6000BCA34E /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46C5DFA20860C6000BCA34E /* ImageService.swift */; };
 		B4808E342099B0AF008BE191 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */; };
+		B4B8234C209DB89E0088304D /* trymapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8234B209DB89E0088304D /* trymapViewController.swift */; };
+		B4B8234E209DBB920088304D /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8234D209DBB920088304D /* SearchResultsController.swift */; };
 		B4BF376F2081FC4300FDA0BE /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */; };
 		B4BF37702081FC4300FDA0BE /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */; };
 		B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF37712082021500FDA0BE /* FirstViewController.swift */; };
@@ -91,6 +93,8 @@
 		B46C5DF8208604A500BCA34E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "TravelApp/Views/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B46C5DFA20860C6000BCA34E /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		B4B8234B209DB89E0088304D /* trymapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trymapViewController.swift; sourceTree = "<group>"; };
+		B4B8234D209DBB920088304D /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4BF37712082021500FDA0BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +294,8 @@
 				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
 				B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */,
 				B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */,
+				B4B8234B209DB89E0088304D /* trymapViewController.swift */,
+				B4B8234D209DBB920088304D /* SearchResultsController.swift */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -325,8 +331,6 @@
 				4594C777205EEFEC00E3AA5B /* Sources */,
 				4594C778205EEFEC00E3AA5B /* Frameworks */,
 				4594C779205EEFEC00E3AA5B /* Resources */,
-				C0C270A7C0AC27FB38358937 /* [CP] Embed Pods Frameworks */,
-				26232371C0EFA081A4BA40E7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -346,8 +350,6 @@
 				4594C782205EEFEC00E3AA5B /* Sources */,
 				4594C783205EEFEC00E3AA5B /* Frameworks */,
 				4594C784205EEFEC00E3AA5B /* Resources */,
-				03BEA86826C857286E7AB814 /* [CP] Embed Pods Frameworks */,
-				4D84177134274EB63F2F6AF9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -436,21 +438,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		03BEA86826C857286E7AB814 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAppUITests/Pods-TravelAppUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		0D442C66DBC9E7B88D245040 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -467,36 +454,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		26232371C0EFA081A4BA40E7 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAppTests/Pods-TravelAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4D84177134274EB63F2F6AF9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAppUITests/Pods-TravelAppUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6CC840FC9B29123B02C05438 /* [CP] Check Pods Manifest.lock */ = {
@@ -525,6 +482,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GooglePlacesSearchController/GooglePlacesSearchController.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -532,6 +490,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesSearchController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -547,28 +506,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C0C270A7C0AC27FB38358937 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TravelAppTests/Pods-TravelAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D9EDEB1B34757ECB49CA5B8E /* [CP] Check Pods Manifest.lock */ = {
@@ -600,9 +549,11 @@
 				4594C79A205EF0BF00E3AA5B /* InitialViewController.swift in Sources */,
 				4594C7A2205EFA2800E3AA5B /* Extensions.swift in Sources */,
 				B4808E342099B0AF008BE191 /* PostDetailsViewController.swift in Sources */,
+				B4B8234C209DB89E0088304D /* trymapViewController.swift in Sources */,
 				B45AD035207FEE120056481E /* Post.swift in Sources */,
 				B46C5DED2083F13E00BCA34E /* User.swift in Sources */,
 				45B6EEE02068224800A380F5 /* SignUpViewController.swift in Sources */,
+				B4B8234E209DBB920088304D /* SearchResultsController.swift in Sources */,
 				4594C79F205EF92300E3AA5B /* RoundedWhiteButton.swift in Sources */,
 				4594C7A4205F0F0A00E3AA5B /* LogInViewController.swift in Sources */,
 				459620B6206D1D9500E342B6 /* HomeViewController.swift in Sources */,

@@ -8,13 +8,51 @@
 
 import UIKit
 import Firebase
+import GoogleMaps
+import GooglePlaces
+import GooglePlacesSearchController
 
-class NewPostViewController: UIViewController {
+
+class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, UISearchBarDelegate, LocateOnTheMap, GMSAutocompleteFetcherDelegate{
+    
+    func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
+        
+    }
+    
+  
+    
+    func didAutocomplete(with predictions: [GMSAutocompletePrediction]) {
+        
+        for prediction in predictions {
+            
+            if let prediction = prediction as GMSAutocompletePrediction?{
+                self.resultsArray.append(prediction.attributedFullText.string)
+            }
+        }
+        self.searchResultController.reloadDataWithArray(self.resultsArray)
+        //self.searchResultsTable.reloadDataWithArray(self.resultsArray)
+        print(resultsArray)
+    }
+    
+    func didFailAutocompleteWithError(_ error: Error) {
+        
+    }
+    
 
     
+   var gmsFetcher: GMSAutocompleteFetcher!
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var addImageButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var googleMapsContainer: UIView!
+    var googleMapsView: GMSMapView!
+    var searchResultController: SearchResultsController!
+    var resultsArray = [String]()
+    
+    //trasmitedData
+    
+    
     
     //fields to save
     @IBOutlet weak var imageAdded: UIImageView!
@@ -22,14 +60,22 @@ class NewPostViewController: UIViewController {
     @IBOutlet weak var price: UITextField!
     @IBOutlet weak var postTitle: UITextField!
     @IBOutlet weak var category: UITextField!
+    @IBOutlet weak var experienceDescription: UITextView!
     
     var imagePicker :UIImagePickerController!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-     //scrollView.contentSize = CGSize(width: 320, height: 1500)
-        // Do any additional setup after loading the view.
     }
-
+   /*
+    @IBAction func hanndleSearchButton(_ sender: Any) {
+        let searchController = UISearchController(searchResultsController: searchResultController)
+        searchController.searchBar.delegate = self
+        
+        self.present(searchController, animated:true, completion: nil)
+    }
+    */
+    
     @IBAction func handlePostButton(_ sender: Any) {
         
         guard let image = imageAdded.image else { return }
@@ -52,6 +98,7 @@ class NewPostViewController: UIViewController {
             "title" : self.postTitle.text,
             "category": self.category.text,
             "price" : self.price.text,
+            "description" : self.experienceDescription.text,
             "timestamp": [".sv":"timestamp"],
             "photoURL" : postImageURL?.absoluteString
         ] as [String:Any]
@@ -92,6 +139,14 @@ class NewPostViewController: UIViewController {
         }
     }
     
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+      
+        self.resultsArray.removeAll()
+        gmsFetcher?.sourceTextHasChanged(searchText)
+
+    }
+    
     @IBAction func handleCancelButton(_ sender: Any) {
     }
     
@@ -114,6 +169,25 @@ class NewPostViewController: UIViewController {
     @objc func openImagePicker(_ sender: Any){
         self.present(imagePicker, animated: true, completion: nil)
         
+    }
+    //Placeholder text
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if(textView.text == "Enter a description"){
+            textView.text = ""
+        }
+        textView.becomeFirstResponder()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+       // self.googleMapsView =  GMSMapView(frame: self.googleMapsContainer.frame)
+       // self.view.addSubview(self.googleMapsView)
+        
+        searchResultController = SearchResultsController()
+        searchResultController.delegate = self
+        gmsFetcher = GMSAutocompleteFetcher()
+        gmsFetcher.delegate = self
     }
   
 

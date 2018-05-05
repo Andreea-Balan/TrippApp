@@ -11,6 +11,9 @@ target 'TravelApp' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'GoogleMaps'
+  pod 'GooglePlacesSearchController'
+  pod 'GooglePlaces'
 
   target 'TravelAppTests' do
     inherit! :search_paths

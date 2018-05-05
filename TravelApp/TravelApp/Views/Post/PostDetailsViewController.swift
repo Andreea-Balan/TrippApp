@@ -17,6 +17,8 @@ class PostDetailsViewController: UIViewController {
     var postPrice: String!*/
     var post: Post!
     
+    @IBOutlet weak var postOverview: UITextView!
+    @IBOutlet weak var postCity: UILabel!
     @IBOutlet weak var authorImage: UIImageView!
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postTitle: UILabel!
@@ -26,6 +28,11 @@ class PostDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    postOverview.translatesAutoresizingMaskIntoConstraints = true
+        
+        postOverview.sizeToFit()
+        
+        postOverview.isScrollEnabled = false
         ImageService.getImage(withURL: post.photoURL) { image in
             self.postImage.image = image
         }
@@ -36,6 +43,7 @@ class PostDetailsViewController: UIViewController {
         ImageService.getImage(withURL: post.author.photoURL) { image in
             self.authorImage.image = image
         }
+        self.postCity.text = post.location
         
     }
 
