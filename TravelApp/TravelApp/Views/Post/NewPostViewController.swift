@@ -16,9 +16,14 @@ import GooglePlacesSearchController
 class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate, UISearchBarDelegate, LocateOnTheMap, GMSAutocompleteFetcherDelegate{
     
     func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
-        
+        DispatchQueue.main.async { () ->Void in
+            
+            self.positon = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+            self.adress.text = title
+            
+            
+        }
     }
-    
   
     
     func didAutocomplete(with predictions: [GMSAutocompletePrediction]) {
@@ -61,20 +66,27 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
     @IBOutlet weak var postTitle: UITextField!
     @IBOutlet weak var category: UITextField!
     @IBOutlet weak var experienceDescription: UITextView!
+    @IBOutlet weak var adress: UITextField!
+    var positon:CLLocationCoordinate2D?
+    
     
     var imagePicker :UIImagePickerController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        experienceDescription.layer.cornerRadius = 5
+        experienceDescription.layer.borderColor = UIColor(red:0.93, green:0.93, blue:0.93, alpha:1.0).cgColor
+        experienceDescription.layer.borderWidth = 1
+        
     }
-   /*
+   
     @IBAction func hanndleSearchButton(_ sender: Any) {
         let searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchBar.delegate = self
         
         self.present(searchController, animated:true, completion: nil)
     }
-    */
+ 
     
     @IBAction func handlePostButton(_ sender: Any) {
         
@@ -99,6 +111,11 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
             "category": self.category.text,
             "price" : self.price.text,
             "description" : self.experienceDescription.text,
+            "location": [
+                "address":self.adress.text,
+                "lat": self.positon?.latitude,
+                "lon": self.positon?.longitude
+            ],
             "timestamp": [".sv":"timestamp"],
             "photoURL" : postImageURL?.absoluteString
         ] as [String:Any]
@@ -176,6 +193,20 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
             textView.text = ""
         }
         textView.becomeFirstResponder()
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if(textView.text == ""){
+            textView.text = "Enter a description"
+        }
+        textView.becomeFirstResponder()
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if(textView.text == ""){
+            textView.text = "Enter a description"
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

@@ -22,6 +22,7 @@ class PostDetailsViewController: UIViewController {
     @IBOutlet weak var authorImage: UIImageView!
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var postTitle: UILabel!
+    @IBOutlet weak var postDescription: UITextView!
     @IBOutlet weak var postCategori: UILabel!
     @IBOutlet weak var postAuthor: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!

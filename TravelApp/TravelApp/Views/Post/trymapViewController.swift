@@ -51,6 +51,12 @@ class trymapViewController: UIViewController, UISearchBarDelegate, LocateOnTheMa
         
         self.present(searchController, animated:true, completion: nil)
     }
+  
+    @IBAction func handleDoneButton(_ sender: Any) {
+    
+        UIApplication.shared.sendAction((self.navigationItem.leftBarButtonItem?.action)!, to: self.navigationItem.leftBarButtonItem?.target, from: self, for: nil)
+        
+    }
     
     func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
         DispatchQueue.main.async { () ->Void in
@@ -86,6 +92,7 @@ class trymapViewController: UIViewController, UISearchBarDelegate, LocateOnTheMa
  */
         self.resultsArray.removeAll()
         gmsFetcher?.sourceTextHasChanged(searchText)
+        
 
         
     }
