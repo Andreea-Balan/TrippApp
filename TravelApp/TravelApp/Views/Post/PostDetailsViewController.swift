@@ -7,8 +7,20 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class PostDetailsViewController: UIViewController {
+class PostDetailsViewController: UIViewController, LocateOnTheMap {
+    func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
+        let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        let marker = GMSMarker(position: position)
+        let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lon, zoom: 10)
+        self.googleMapsView.camera = camera
+        
+        marker.title = "Address : \(title)"
+        marker.map = self.googleMapsView
+        
+    }
+    
 
     /*var postImage: UIImage!
     var postCategory: String!
@@ -16,6 +28,11 @@ class PostDetailsViewController: UIViewController {
     var postCity: String!
     var postPrice: String!*/
     var post: Post!
+    
+    //google map
+    var googleMapsView: GMSMapView!
+    @IBOutlet weak var googleContainer: UIView!
+    
     
     @IBOutlet weak var postOverview: UITextView!
     @IBOutlet weak var postCity: UILabel!
@@ -26,6 +43,7 @@ class PostDetailsViewController: UIViewController {
     @IBOutlet weak var postCategori: UILabel!
     @IBOutlet weak var postAuthor: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var postAddress: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -45,7 +63,33 @@ class PostDetailsViewController: UIViewController {
             self.authorImage.image = image
         }
         self.postCity.text = post.location
+        self.postDescription.text = post.description
+        self.postAddress.text = (post.locationAddress["address"] as! String)
         
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        self.googleMapsView =  GMSMapView(frame: self.googleContainer.frame)
+        let lat = post.locationAddress["lat"] as! Double
+        let lon = post.locationAddress["lon"] as! Double
+        let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
+        let marker = GMSMarker(position: position)
+        let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lon, zoom: 10)
+        self.googleMapsView.camera = camera
+        
+        marker.title = "Address : \(title)"
+        marker.map = self.googleMapsView
+        
+       self.view.insertSubview(googleMapsView, aboveSubview: googleContainer)
+        
+        
+        //Not working to bring subview on top
+        //googleContainer.addSubview(self.googleMapsView)
+        //googleContainer.bringSubview(toFront: self.googleMapsView)
+        // self.googleMapsView.layer.zPosition = 1
+    
+        print(googleMapsView.isDescendant(of: self.googleContainer))
     }
 
     override func didReceiveMemoryWarning() {

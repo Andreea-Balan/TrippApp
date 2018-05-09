@@ -9,7 +9,7 @@
 import UIKit
 import GooglePlaces
 import GoogleMaps
-import GooglePlacesSearchController
+//import GooglePlacesSearchController
 
 class trymapViewController: UIViewController, UISearchBarDelegate, LocateOnTheMap, GMSAutocompleteFetcherDelegate {
     

@@ -10,14 +10,15 @@ import UIKit
 import  Firebase
 
 
-class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
-    
+class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UISearchBarDelegate {
+
     var postImage: UIImage?
     var postCategory: String = ""
     var postTitle: String = ""
     var postCity: String = ""
     var postPrice: String = ""
     
+    @IBOutlet weak var searchLocation: UISearchBar!
     @IBOutlet weak var collectionView: UICollectionView!
     var posts = [Post]()
     var tappedPost: Post?
@@ -25,6 +26,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     @IBAction func handleLogout(_target:UIBarButtonItem){
         try! Auth.auth().signOut()
+        
         
     }
     
@@ -39,6 +41,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
         collectionView.reloadData()
         observePosts()
         
+        searchLocation.delegate = self
         
         
         var layout = self.collectionView.collectionViewLayout as! UICollectionViewFlowLayout
@@ -67,6 +70,8 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
                     let postURL = URL(string: postPhotoURL),
                     let price =  dict["price"] as? String,
                     let title = dict["title"] as? String,
+                    let location = dict["location"] as? [String:Any],
+                    let description = dict["description"] as? String,
                     let timestamp = dict["timestamp"] as? Double,
                     let author = dict["author"] as? [String:Any],
                     let uid = author["userId"] as? String,
@@ -75,7 +80,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
                     let authorURL = URL(string: authorPhotoURL) {
                         
                         let authorProfile = User(uid: uid, username: username, photoURL: authorURL)
-                        let post =  Post(id: childSnapshot.key, author: authorProfile, category: category, title: title, price: Int(price)!, location: city, timestamp: timestamp, photoURL: postURL)
+                    let post =  Post(id: childSnapshot.key, author: authorProfile, category: category, title: title, price: Int(price)!, location: city,  description: description, locationAddress: location ,timestamp: timestamp, photoURL: postURL)
                     
                         temporaryPosts.append(post)
                 }
@@ -121,6 +126,9 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
         cell?.layer.borderWidth = 0.5
     }
    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("here")
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if (segue.identifier == "goToDetails") {

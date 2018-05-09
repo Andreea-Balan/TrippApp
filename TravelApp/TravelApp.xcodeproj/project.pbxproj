@@ -165,6 +165,7 @@
 				4594C76C205EEFEC00E3AA5B /* ViewController.swift */,
 				4594C771205EEFEC00E3AA5B /* Assets.xcassets */,
 				4594C776205EEFEC00E3AA5B /* Info.plist */,
+				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
 			);
 			path = TravelApp;
 			sourceTree = "<group>";
@@ -291,7 +292,6 @@
 			children = (
 				B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */,
 				B4BF37712082021500FDA0BE /* FirstViewController.swift */,
-				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
 				B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */,
 				B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */,
 				B4B8234B209DB89E0088304D /* trymapViewController.swift */,

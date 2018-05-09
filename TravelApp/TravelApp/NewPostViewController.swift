@@ -20,8 +20,6 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
             
             self.positon = CLLocationCoordinate2D(latitude: lat, longitude: lon)
             self.adress.text = title
-            
-            
         }
     }
   
@@ -81,6 +79,7 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
     }
    
     @IBAction func hanndleSearchButton(_ sender: Any) {
+       
         let searchController = UISearchController(searchResultsController: searchResultController)
         searchController.searchBar.delegate = self
         
@@ -93,12 +92,16 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
         guard let image = imageAdded.image else { return }
         var postImageURL:URL? = nil
         let postRef = Database.database().reference().child("posts").childByAutoId()
+        let citiesRef = Database.database().reference().child("cities").childByAutoId()
         self.uploadPostImage(image) { url in
             if url != nil {
                 postImageURL = url
             }
         guard let userProfile = UserService.currentUserProfile else { return }
         // guard let uid = Auth.auth().currentUser?.uid else { return }
+        let citiesObject = [
+            "name": self.city.text
+            ]
         let postObject = [
             "author": [
                 "userId": userProfile.uid,
@@ -122,6 +125,20 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
         
         postRef.setValue(postObject, withCompletionBlock: {error, ref in
             if error == nil {
+                Database.database().reference().child("cities").queryOrdered(byChild: "name").queryEqual(toValue: self.city.text!).observe(.value, with: {(snapshot) in
+                    if snapshot.exists() == true {
+                        print("city exists in DB")
+                    }else {
+                        print("city doesn't exist")
+                        citiesRef.setValue(citiesObject, withCompletionBlock: {error, ref in
+                            if error == nil {
+                                print("city in DB")
+                            }else {
+                                 //handle the error
+                            }
+                        })
+                    }
+                })
                 self.dismiss(animated: true, completion: nil)
             }  else {
                 //handle the error
@@ -191,12 +208,14 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
     func textViewDidBeginEditing(_ textView: UITextView) {
         if(textView.text == "Enter a description"){
             textView.text = ""
+            textView.textColor = UIColor.darkGray
         }
         textView.becomeFirstResponder()
     }
     
     func textViewDidEndEditing(_ textView: UITextView) {
         if(textView.text == ""){
+            textView.textColor = UIColor.lightGray
             textView.text = "Enter a description"
         }
         textView.becomeFirstResponder()

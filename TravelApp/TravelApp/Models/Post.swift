@@ -16,17 +16,22 @@ class Post {
     var price : Int
     var location : String
     var timestamp: Double
+    var description: String
+    var locationAddress: [String:Any]
     var photoURL: URL
     
-    init(id: String, author: User, category:String, title:String, price: Int, location: String, timestamp: Double, photoURL: URL) {
+    init(id: String, author: User, category:String, title:String, price: Int, location: String, description: String, locationAddress: [String:Any], timestamp: Double, photoURL: URL) {
         self.id = id
         self.author = author
         self.category = category
         self.price = price
         self.title = title
         self.location = location
+        self.locationAddress = locationAddress
         self.timestamp = timestamp
         self.photoURL = photoURL
+        self.description = description
+        self.locationAddress = locationAddress
     }
     
     
