@@ -9,6 +9,8 @@
 import UIKit
 import GoogleMaps
 
+//add about your host on detail view
+
 class PostDetailsViewController: UIViewController, LocateOnTheMap {
     func locateWithLongitude(_ lon: Double, andLatitude lat: Double, andTitle title: String) {
         let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
@@ -22,11 +24,6 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
     }
     
 
-    /*var postImage: UIImage!
-    var postCategory: String!
-    var postTitle: String!
-    var postCity: String!
-    var postPrice: String!*/
     var post: Post!
     
     //google map
@@ -44,6 +41,7 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
     @IBOutlet weak var postAuthor: UILabel!
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var postAddress: UILabel!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -57,7 +55,7 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
         }
         self.postTitle.text = post.title
         self.postCategori.text = post.category
-        self.postAuthor.text = "Hosted by " + post.author.username
+        self.postAuthor.text = "Hosted by " + post.author.firstname
         
         ImageService.getImage(withURL: post.author.photoURL) { image in
             self.authorImage.image = image
@@ -65,6 +63,21 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
         self.postCity.text = post.location
         self.postDescription.text = post.description
         self.postAddress.text = (post.locationAddress["address"] as! String)
+        
+        
+        authorImage.layer.cornerRadius = authorImage.bounds.height / 2
+        authorImage.clipsToBounds = true
+        // image tapped acction
+        
+        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openAuthorDetails))
+        authorImage.isUserInteractionEnabled = true
+        authorImage.addGestureRecognizer(imageTap)
+        
+    }
+  
+    @objc func openAuthorDetails(_ sender: Any){
+       // self.present(PostAuthorDetailsViewController, animated: true, completion: nil)
+        performSegue(withIdentifier: "authordetails", sender: self)
         
     }
     
@@ -92,20 +105,22 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
         print(googleMapsView.isDescendant(of: self.googleContainer))
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if (segue.identifier == "authordetails") {
+            //   let cell = sender as! PostCollectionViewCell
+            
+            let detailView = segue.destination as! PostAuthorDetailsViewController
+            detailView.post = post
+        }
+        
+        if(segue.identifier == "goToProfile") {
+            let detailView = segue.destination as! PostAuthorDetailsViewController
+            detailView.isUserLoged = 1
+        }
     }
-    */
+
+
 
 }

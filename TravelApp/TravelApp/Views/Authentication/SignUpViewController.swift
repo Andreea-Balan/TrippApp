@@ -12,7 +12,8 @@ import FirebaseStorage
 
 class SignUpViewController: UIViewController,UITextFieldDelegate {
 
-    @IBOutlet weak var usernameField: UITextField!
+    @IBOutlet weak var firstNameField: UITextField!
+    @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var dismissButton: UIButton!
@@ -44,12 +45,15 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         activityView.center = continueButton.center
         
         view.addSubview(activityView)
-        
-        usernameField.delegate = self
+        lastNameField.delegate = self
+        firstNameField.delegate = self
+        //usernameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
         
-        usernameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        
+        firstNameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+        lastNameField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         emailField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         passwordField.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
         
@@ -77,10 +81,13 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @objc func textFieldChanged(_ target:UITextField) {
-        let username = usernameField.text
+        //let username = usernameField.text
+       
+        let lastname = lastNameField.text
+        let firstname = firstNameField.text
         let email = emailField.text
         let password = passwordField.text
-        let formFilled = username != nil && username != "" && email != nil && email != "" && password != nil && password != ""
+        let formFilled = lastname != nil && lastname != "" && firstname != nil && firstname != "" && email != nil && email != "" && password != nil && password != ""
         setContinueButton(enabled: formFilled)
     }
     
@@ -99,10 +106,13 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         // Resigns the target textField and assigns the next textField in the form.
         
         switch textField {
-        case usernameField:
-            usernameField.resignFirstResponder()
+        case lastNameField:
+            lastNameField.resignFirstResponder()
             emailField.becomeFirstResponder()
             break
+        case firstNameField:
+            firstNameField.resignFirstResponder()
+            emailField.becomeFirstResponder()
         case emailField:
             emailField.resignFirstResponder()
             passwordField.becomeFirstResponder()
@@ -117,7 +127,8 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @objc func handleSignUp() {
-        guard let username = usernameField.text else { return }
+        guard let lastname = lastNameField.text else { return }
+        guard let firstname = firstNameField.text else { return }
         guard let email = emailField.text else { return }
         guard let pass = passwordField.text else { return }
         guard let image = profileImage.image else { return }
@@ -135,12 +146,12 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
                 self.uploadProfileImage(image) { url in
                     if url != nil {
                         let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
-                        changeRequest?.displayName = username
+                        changeRequest?.displayName = firstname
                         changeRequest?.photoURL = url
                     
                         changeRequest?.commitChanges{ error in
                             if error == nil {
-                                self.saveProfile(username: username, profileImageURL: url!){ success in
+                                self.saveProfile(lastname: lastname, firstname: firstname, profileImageURL: url!){ success in
                                     if success {
                                         self.dismiss(animated: false, completion: nil)
                                     } else {
@@ -189,16 +200,20 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    func saveProfile(username: String, profileImageURL : URL, completion: @escaping((_ success:Bool)->())) {
+    func saveProfile(lastname: String,firstname: String, profileImageURL : URL, completion: @escaping((_ success:Bool)->())) {
         
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
-        
+        print("Check1")
         let userObject = [
-            "username" : username,
-            "photoURL" : profileImageURL.absoluteString
+            "lastname" : lastname,
+            "firstname": firstname,
+            "photoURL" : profileImageURL.absoluteString,
+            "description": "",
+            "phoneNumber": "",
+            "country": ""
         ] as [String: Any]
-        
+        print("Check2")
         databaseRef.setValue(userObject){ error, ref in
             completion(error == nil )
         }
@@ -207,14 +222,15 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-       usernameField.becomeFirstResponder()
+        lastNameField.becomeFirstResponder()
        //NotificationCenter.default.addObserver(self, selector:#selector(keyboardWillAppear), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
     }
     
     override func viewWillDisappear(_ animated: Bool) {
     super.viewWillDisappear(animated)
-        usernameField.resignFirstResponder()
+        lastNameField.resignFirstResponder()
+        firstNameField.resignFirstResponder()
       emailField.resignFirstResponder()
      passwordField.resignFirstResponder()
         

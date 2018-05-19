@@ -10,14 +10,18 @@ import UIKit
 
 class PostAuthorDetailsViewController: UIViewController {
 
+    var post: Post?
     var isUserLoged = 0
     @IBOutlet weak var followImage: UIImageView!
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var coverImage: UIView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var userDescription: UITextView!
     
+    @IBOutlet weak var userCountry: UILabel!
     @IBOutlet weak var editProfileButton: UIButton!
     
-    //just for test
+    //just for tes
     var fallow: Bool = false
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +29,29 @@ class PostAuthorDetailsViewController: UIViewController {
         if(isUserLoged == 0){
             editProfileButton.isHidden = true
             editProfileButton.frame.size.height = 0
+           
+            ImageService.getImage(withURL: (post?.author.photoURL)!) { image in
+                self.profileImage.image = image
+            }
+            userName.text = (post?.author.firstname)! + " " + (post?.author.lastname)!
+            userCountry.text = (post?.author.country)!
+            userDescription.text = (post?.author.description)!
         }
-     
+        else {
+            
+             guard let userProfile = UserService.currentUserProfile else { return }
+            
+            ImageService.getImage(withURL: userProfile.photoURL) { image in
+                self.profileImage.image = image
+            }
+                
+            userName.text = userProfile.firstname + " " + userProfile.lastname
+            userCountry.text = userProfile.country
+            userDescription.text = userProfile.description
+            
+        }
+        
+      
         profileImage.layer.borderColor = UIColor.white.cgColor
         profileImage.layer.borderWidth = 4.0
         profileImage.layer.cornerRadius = 3

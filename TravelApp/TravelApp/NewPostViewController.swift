@@ -105,7 +105,11 @@ class NewPostViewController: UIViewController, UITextViewDelegate, UITextFieldDe
         let postObject = [
             "author": [
                 "userId": userProfile.uid,
-                "username": userProfile.username,
+                "firstname": userProfile.firstname,
+                "lastname": userProfile.lastname,
+                "country": userProfile.country,
+                "description": userProfile.description,
+                "phoneNumber": userProfile.phoneNumber,
                 "photoURL":userProfile.photoURL.absoluteString
             ],
             //"userID": uid,

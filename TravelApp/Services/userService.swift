@@ -20,10 +20,14 @@ class UserService {
             var userProfile:User?
             
             if let dict = snapshot.value as? [String:Any],
-                let username = dict["username"] as? String,
+                let lastname = dict["lastname"] as? String,
+                let firstname = dict["firstname"] as? String,
                 let photoURL = dict["photoURL"] as? String,
+                let phoneNumber = dict["phoneNumber"] as? String,
+                let description = dict["description"] as? String,
+                let country = dict["country"] as? String,
                 let url = URL(string: photoURL) {
-                    userProfile = User(uid: snapshot.key, username: username, photoURL: url)
+                userProfile = User(uid: snapshot.key, lastname: lastname, firstname:firstname, photoURL: url, phoneNumber: phoneNumber, description: description,country: country)
             }
             
             completion(userProfile)

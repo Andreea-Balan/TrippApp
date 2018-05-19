@@ -11,6 +11,8 @@ import Firebase
 import GoogleMaps
 import GooglePlaces
 
+//#97b2e4
+// UIColor(red:0.60, green:0.68, blue:0.90, alpha:1.0)
 let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 180/255, alpha: 1)
 let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
 
@@ -26,7 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey("AIzaSyC-kopCWIwUpoxl2dqd7xGv-ZZT-ybIKkU")
         GMSPlacesClient.provideAPIKey("AIzaSyDHEWLWpM3-zLalIj2jjOEGojTCJ7hewOg")
-        
+       
+        UINavigationBar.appearance().backgroundColor =  UIColor(red:0.60, green:0.68, blue:0.90, alpha:1.0) //UIColor(red:0.50, green:0.90, blue:0.99, alpha:1.0)
+        UINavigationBar.appearance().tintColor = UIColor(red:0.31, green:0.44, blue:0.67, alpha:1.0) //UIColor(red:0.60, green:0.68, blue:0.90, alpha:1.0) //UIColor(red:0.50, green:0.90, blue:0.99, alpha:1.0) //UIColor(red:0.60, green:0.89, blue:0.93, alpha:1.0)
         
         let authListner = Auth.auth().addStateDidChangeListener{auth, user in
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

@@ -10,15 +10,22 @@ import Foundation
 
 class User {
     var uid: String
-    var username: String
+    var lastname: String
+    var firstname: String
     var photoURL : URL
+    var phoneNumber: String
+    var description: String
+    var country: String
     
     
-    init(uid: String, username:String, photoURL:URL) {
+    init(uid: String, lastname:String, firstname:String,photoURL:URL,phoneNumber: String,description: String, country:String) {
         self.uid = uid
-        self.username = username
+        self.lastname = lastname
+        self.firstname = firstname
         self.photoURL = photoURL
-      
+        self.phoneNumber = phoneNumber
+        self.description = description
+        self.country = country
     }
     
     
