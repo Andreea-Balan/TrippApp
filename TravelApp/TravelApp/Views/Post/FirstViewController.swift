@@ -8,13 +8,10 @@
 
 import UIKit
 import  Firebase
+import CoreLocation
 
 
 class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
-   
-    
- 
-
     var postImage: UIImage?
     var postCategory: String = ""
     var postTitle: String = ""
@@ -30,11 +27,9 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
     var tappedCity: City?
     var cities = [City]()
     var filterCities = [City]()
-    
-    
+
     @IBAction func handleLogout(_target:UIBarButtonItem){
         try! Auth.auth().signOut()
-        
         
     }
     
@@ -48,7 +43,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
         collectionView.dataSource = self
         collectionView.reloadData()
         
-        
+
         searchLocation.delegate = self
         searchedResultsTable.delegate = self
         searchedResultsTable.dataSource = self
@@ -136,7 +131,14 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
                     
                     let objectiveName = each["name"] as? String
                     let objectiveImageURL = each["photoURL"] as? String
-                        let objectiveImage = URL(string: objectiveImageURL!)
+                    let objectiveImage = URL(string: objectiveImageURL!)
+                    
+                    let coord =  each["location"] as? [String:Double]
+                            
+                    let location = Location(name: objectiveName!, location: CLLocationCoordinate2D(latitude: coord!["lat"]!, longitude: coord!["lon"]!))
+                        
+                        
+                        
                     let objectiveDescription = each["description"] as? String
                     let objectiveColor = each["color"] as? String
                     
@@ -148,7 +150,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
                            color = UIColor(red: 105/255.0, green: 80/255.0, blue: 227/255.0, alpha: 0.5)
                         }
                         
-                        let partialObjective = Objectiv(title: objectiveName!, featuredImage: objectiveImage!, color: color, description: objectiveDescription!)
+                        let partialObjective = Objectiv(title: objectiveName!, featuredImage: objectiveImage!, color: color, description: objectiveDescription!, location: location)
                     temporaryObjectives.append(partialObjective)
                    
                         
@@ -173,11 +175,25 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        var liked = false
+        let userUid = Auth.auth().currentUser?.uid
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectioncell", for: indexPath) as! PostCollectionViewCell
         
-        
-        
-        cell.setPost(post: posts[indexPath.row])
+        let likeRef = Database.database().reference().child("likes").queryOrdered(byChild: "post").queryEqual(toValue:(posts[indexPath.row].id))
+        likeRef.observe(.value, with: {snapshot in
+            for child in snapshot.children {
+                if let childSnap = child as? DataSnapshot,
+                    let dict = childSnap.value as? [String:Any],
+                    let user = dict["user"] as? String {
+                    if(user == userUid){
+                        liked = true
+                        cell.setPost(post: self.posts[indexPath.row], liked: true)
+                    }
+                    
+                }
+            }
+        })
+        cell.setPost(post: posts[indexPath.row], liked: liked)
         return cell
     }
 
@@ -258,7 +274,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
         }
         
         if(segue.identifier == "citydetails") {
-            let detailView = segue.destination as! CityDetailViewController
+            let detailView = segue.destination as! RootPageViewController
            detailView.tappedCity = tappedCity
         }
     }

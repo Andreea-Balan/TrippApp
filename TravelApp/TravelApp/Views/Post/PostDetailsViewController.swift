@@ -88,21 +88,24 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
         let lon = post.locationAddress["lon"] as! Double
         let position = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         let marker = GMSMarker(position: position)
-        let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lon, zoom: 10)
+        let camera = GMSCameraPosition.camera(withLatitude: lat, longitude: lon, zoom: 15)
         self.googleMapsView.camera = camera
         
         marker.title = "Address : \(title)"
         marker.map = self.googleMapsView
         
-       self.view.insertSubview(googleMapsView, aboveSubview: googleContainer)
+       //self.view.insertSubview(googleMapsView, aboveSubview: googleContainer)
+        self.scrollView.insertSubview(googleMapsView, aboveSubview: googleContainer)
+    
         
         
         //Not working to bring subview on top
-        //googleContainer.addSubview(self.googleMapsView)
+       // googleContainer.insertSubview(googleMapsView, aboveSubview: googleContainer)
+       // googleContainer.addSubview(self.googleMapsView)
         //googleContainer.bringSubview(toFront: self.googleMapsView)
         // self.googleMapsView.layer.zPosition = 1
     
-        print(googleMapsView.isDescendant(of: self.googleContainer))
+        //print(googleMapsView.isDescendant(of: self.googleContainer))
     }
 
     

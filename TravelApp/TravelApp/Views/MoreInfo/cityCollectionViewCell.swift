@@ -25,7 +25,7 @@ class cityCollectionViewCell: UICollectionViewCell {
                 self.featuredImageView.image = image
             }
             //featuredImageView.image = UIImage(named: "iasipic1")
-            objectivNameLabel.text = objectiv.title
+            objectivNameLabel.text = objectiv.title.components(separatedBy: "-")[0]
             backgroundColorView.backgroundColor = objectiv.color
         } else {
             featuredImageView.image = nil

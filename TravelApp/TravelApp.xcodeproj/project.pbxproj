@@ -24,6 +24,13 @@
 		48829C9505F15414C909A25A /* Pods_TravelApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CA2A3ABD4B577E6D955BCB /* Pods_TravelApp.framework */; };
 		83E098DBDD2FC25E47F79D88 /* Pods_TravelAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D02B2AD37E97DE27473A628 /* Pods_TravelAppTests.framework */; };
 		B40087A220A9E94A0083A7B9 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40087A120A9E94A0083A7B9 /* UserProfileViewController.swift */; };
+		B40F8B8420BEFCC00014945D /* CoverPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F8B8320BEFCC00014945D /* CoverPhotoViewController.swift */; };
+		B40F8B8620BF0BC00014945D /* ObjectivInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F8B8520BF0BC00014945D /* ObjectivInfoViewController.swift */; };
+		B40F8B8820BF200D0014945D /* PinAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B40F8B8720BF200D0014945D /* PinAnnotation.swift */; };
+		B41E43D420B158B5008D1B61 /* GetAroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E43D320B158B5008D1B61 /* GetAroundViewController.swift */; };
+		B41E43D620B1640A008D1B61 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E43D520B1640A008D1B61 /* Location.swift */; };
+		B41E43D820B1C034008D1B61 /* MapKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41E43D720B1C034008D1B61 /* MapKitViewController.swift */; };
+		B42A8F2420C0072800CF072F /* CityExperiencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42A8F2320C0072800CF072F /* CityExperiencesViewController.swift */; };
 		B45AD031207F9A220056481E /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD02F207F9A220056481E /* PostTableViewCell.swift */; };
 		B45AD032207F9A220056481E /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B45AD030207F9A220056481E /* PostTableViewCell.xib */; };
 		B45AD035207FEE120056481E /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = B45AD034207FEE120056481E /* Post.swift */; };
@@ -45,6 +52,7 @@
 		B4BF37702081FC4300FDA0BE /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */; };
 		B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF37712082021500FDA0BE /* FirstViewController.swift */; };
 		B4BF377620823ACA00FDA0BE /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */; };
+		B4CA58D120B7291300D1B030 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA58D020B7291300D1B030 /* RootPageViewController.swift */; };
 		B4F7C9A620A498A8002E54D7 /* PostAuthorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7C9A520A498A8002E54D7 /* PostAuthorDetailsViewController.swift */; };
 		FE8A0EDABA3C08B20DCEF79F /* Pods_TravelAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADE24936A21C99D717013CF /* Pods_TravelAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -95,6 +103,13 @@
 		9877A52ADDAC22ED10C91ADB /* Pods-TravelAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAppTests/Pods-TravelAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		A194D28D64BD01E496ABE4D6 /* Pods-TravelAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAppUITests/Pods-TravelAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B40087A120A9E94A0083A7B9 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		B40F8B8320BEFCC00014945D /* CoverPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverPhotoViewController.swift; sourceTree = "<group>"; };
+		B40F8B8520BF0BC00014945D /* ObjectivInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectivInfoViewController.swift; sourceTree = "<group>"; };
+		B40F8B8720BF200D0014945D /* PinAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinAnnotation.swift; sourceTree = "<group>"; };
+		B41E43D320B158B5008D1B61 /* GetAroundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAroundViewController.swift; sourceTree = "<group>"; };
+		B41E43D520B1640A008D1B61 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		B41E43D720B1C034008D1B61 /* MapKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewController.swift; sourceTree = "<group>"; };
+		B42A8F2320C0072800CF072F /* CityExperiencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityExperiencesViewController.swift; sourceTree = "<group>"; };
 		B45AD02F207F9A220056481E /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		B45AD030207F9A220056481E /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		B45AD034207FEE120056481E /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -116,6 +131,7 @@
 		B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4BF37712082021500FDA0BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
+		B4CA58D020B7291300D1B030 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		B4F7C9A520A498A8002E54D7 /* PostAuthorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthorDetailsViewController.swift; sourceTree = "<group>"; };
 		DDECD9828AD56C05ECDB68C9 /* Pods-TravelAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAppTests/Pods-TravelAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC3901F979F9C9C1F17A6E8 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,7 +199,6 @@
 				4594C76C205EEFEC00E3AA5B /* ViewController.swift */,
 				4594C771205EEFEC00E3AA5B /* Assets.xcassets */,
 				4594C776205EEFEC00E3AA5B /* Info.plist */,
-				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
 			);
 			path = TravelApp;
 			sourceTree = "<group>";
@@ -235,6 +250,7 @@
 				4594C7A1205EFA2800E3AA5B /* Extensions.swift */,
 				B4B8234D209DBB920088304D /* SearchResultsController.swift */,
 				B46C3A7020A33D1B0055E587 /* cityNameTableViewCell.swift */,
+				B40F8B8720BF200D0014945D /* PinAnnotation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -269,6 +285,7 @@
 				B46C5DEC2083F13E00BCA34E /* User.swift */,
 				B4A2C1BB20AC9E9F00E395B6 /* Objectiv.swift */,
 				B49D9B6E20B043720017D5CB /* City.swift */,
+				B41E43D520B1640A008D1B61 /* Location.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,6 +343,7 @@
 			children = (
 				B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */,
 				B4BF37712082021500FDA0BE /* FirstViewController.swift */,
+				B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */,
 				B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */,
 				B4808E332099B0AF008BE191 /* PostDetailsViewController.swift */,
 				B4B8234B209DB89E0088304D /* trymapViewController.swift */,
@@ -339,6 +357,12 @@
 				B4A2C1B520AC879E00E395B6 /* CityDetailViewController.swift */,
 				B4A2C1B720AC8CCE00E395B6 /* ThingsToDoViewController.swift */,
 				B4A2C1B920AC9CDD00E395B6 /* cityCollectionViewCell.swift */,
+				B41E43D320B158B5008D1B61 /* GetAroundViewController.swift */,
+				B41E43D720B1C034008D1B61 /* MapKitViewController.swift */,
+				B4CA58D020B7291300D1B030 /* RootPageViewController.swift */,
+				B40F8B8320BEFCC00014945D /* CoverPhotoViewController.swift */,
+				B40F8B8520BF0BC00014945D /* ObjectivInfoViewController.swift */,
+				B42A8F2320C0072800CF072F /* CityExperiencesViewController.swift */,
 			);
 			path = MoreInfo;
 			sourceTree = "<group>";
@@ -589,10 +613,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B45AD031207F9A220056481E /* PostTableViewCell.swift in Sources */,
+				B42A8F2420C0072800CF072F /* CityExperiencesViewController.swift in Sources */,
 				B40087A220A9E94A0083A7B9 /* UserProfileViewController.swift in Sources */,
 				4594C79A205EF0BF00E3AA5B /* InitialViewController.swift in Sources */,
 				B4A2C1BC20AC9E9F00E395B6 /* Objectiv.swift in Sources */,
 				4594C7A2205EFA2800E3AA5B /* Extensions.swift in Sources */,
+				B40F8B8420BEFCC00014945D /* CoverPhotoViewController.swift in Sources */,
 				B4808E342099B0AF008BE191 /* PostDetailsViewController.swift in Sources */,
 				B4B8234C209DB89E0088304D /* trymapViewController.swift in Sources */,
 				B4F7C9A620A498A8002E54D7 /* PostAuthorDetailsViewController.swift in Sources */,
@@ -602,6 +628,8 @@
 				45B6EEE02068224800A380F5 /* SignUpViewController.swift in Sources */,
 				B4B8234E209DBB920088304D /* SearchResultsController.swift in Sources */,
 				4594C79F205EF92300E3AA5B /* RoundedWhiteButton.swift in Sources */,
+				B41E43D420B158B5008D1B61 /* GetAroundViewController.swift in Sources */,
+				B40F8B8820BF200D0014945D /* PinAnnotation.swift in Sources */,
 				B4A2C1B820AC8CCE00E395B6 /* ThingsToDoViewController.swift in Sources */,
 				4594C7A4205F0F0A00E3AA5B /* LogInViewController.swift in Sources */,
 				459620B6206D1D9500E342B6 /* HomeViewController.swift in Sources */,
@@ -610,11 +638,15 @@
 				4594C76B205EEFEC00E3AA5B /* AppDelegate.swift in Sources */,
 				B4A2C1BA20AC9CDD00E395B6 /* cityCollectionViewCell.swift in Sources */,
 				B46C5DF02083F33A00BCA34E /* userService.swift in Sources */,
+				B40F8B8620BF0BC00014945D /* ObjectivInfoViewController.swift in Sources */,
 				B46C5DFB20860C6000BCA34E /* ImageService.swift in Sources */,
 				4594C79C205EF1FF00E3AA5B /* MenuViewController.swift in Sources */,
 				B49D9B6F20B043720017D5CB /* City.swift in Sources */,
+				B41E43D820B1C034008D1B61 /* MapKitViewController.swift in Sources */,
 				B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */,
 				B46C3A7320A352220055E587 /* CustomSearchBar.swift in Sources */,
+				B41E43D620B1640A008D1B61 /* Location.swift in Sources */,
+				B4CA58D120B7291300D1B030 /* RootPageViewController.swift in Sources */,
 				B4BF377620823ACA00FDA0BE /* NewPostViewController.swift in Sources */,
 				B4A2C1B620AC879E00E395B6 /* CityDetailViewController.swift in Sources */,
 			);
@@ -719,7 +751,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -770,7 +802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

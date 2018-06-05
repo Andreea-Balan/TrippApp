@@ -16,6 +16,7 @@ class ThingsToDoViewController: UIViewController {
     
     var tappedCity: City?
     var objectives = [Objectiv]()
+    var tappedObjective: Objectiv?
     //var objectives = Objectiv.fetchObjectivs()
     let cellScaling: CGFloat = 0.6
     
@@ -26,13 +27,13 @@ class ThingsToDoViewController: UIViewController {
         slideShowImage2.alpha = 0
         slideShowImage3.alpha = 0
        
-        ImageService.getImage(withURL: (tappedCity?.photoURL[0])!) { image in
+        ImageService.getImage(withURL: (tappedCity?.photoURL[1])!) { image in
             self.slideShowImage1.image = image
         }
-        ImageService.getImage(withURL: (tappedCity?.photoURL[1])!) { image in
+        ImageService.getImage(withURL: (tappedCity?.photoURL[2])!) { image in
             self.slideShowImage2.image = image
         }
-        ImageService.getImage(withURL: (tappedCity?.photoURL[2])!) { image in
+        ImageService.getImage(withURL: (tappedCity?.photoURL[3])!) { image in
             self.slideShowImage3.image = image
         }
         self.perform(#selector(self.slide1), with: nil, afterDelay: 3)
@@ -108,5 +109,25 @@ extension ThingsToDoViewController: UICollectionViewDataSource, UICollectionView
         
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //let cell = collectionView.cellForItem(at: indexPath) 
+
+        
+        tappedObjective = objectives[indexPath.row]
+        
+        
+        self.performSegue(withIdentifier: "goToObjectiveDetails", sender: self)
+    }
   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if(segue.identifier == "goToObjectiveDetails") {
+            let detailView = segue.destination as! ObjectivInfoViewController
+            detailView.tappedObjective = tappedObjective
+        }
+    }
+    
+    
 }

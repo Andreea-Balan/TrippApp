@@ -10,6 +10,8 @@ import UIKit
 
 class CityDetailViewController: UIViewController {
 
+    @IBOutlet weak var experiencesImage: UIImageView!
+    @IBOutlet weak var getAroundImage: UIImageView!
     @IBOutlet weak var cityImage: UIImageView!
     @IBOutlet weak var thingsToDoImage: UIImageView!
     var tappedCity: City?
@@ -18,7 +20,7 @@ class CityDetailViewController: UIViewController {
         super.viewDidLoad()
         pictureLayout()
         
-        ImageService.getImage(withURL: (tappedCity?.photoURL[1])!) { image in
+        ImageService.getImage(withURL: (tappedCity?.photoURL[2])!) { image in
             self.cityImage.image = image
         }
 
@@ -27,16 +29,39 @@ class CityDetailViewController: UIViewController {
     func pictureLayout() {
         thingsToDoImage.layer.cornerRadius = thingsToDoImage.bounds.height / 2
         thingsToDoImage.clipsToBounds = true
+        experiencesImage.layer.cornerRadius = experiencesImage.bounds.height / 2
+        experiencesImage.clipsToBounds = true
         
-        let imageTap = UITapGestureRecognizer(target: self, action: #selector(openThingToDo))
+        let imageTap1 = UITapGestureRecognizer(target: self, action: #selector(openThingToDo))
+        let imageTap2 = UITapGestureRecognizer(target: self, action: #selector(openGetAround))
+        let imageTap3 = UITapGestureRecognizer(target: self, action: #selector(openExperiences))
         thingsToDoImage.isUserInteractionEnabled = true
-        thingsToDoImage.addGestureRecognizer(imageTap)
+        getAroundImage.isUserInteractionEnabled = true
+        experiencesImage.isUserInteractionEnabled = true
+        thingsToDoImage.addGestureRecognizer(imageTap1)
+        getAroundImage.addGestureRecognizer(imageTap2)
+        experiencesImage.addGestureRecognizer(imageTap3)
+        
     }
 
-    @objc func openThingToDo(_ sender: Any){
+    @objc func openThingToDo(_ sender: UIImageView){
+       
+       // if( sender.restorationIdentifier == "thingtodo"){
+            performSegue(withIdentifier: "thingstodo", sender: self)
+      
+    }
 
-        performSegue(withIdentifier: "thingstodo", sender: self)
+    @objc func openExperiences(_ sender: UIImageView){
         
+        // if( sender.restorationIdentifier == "thingtodo"){
+        performSegue(withIdentifier: "experiences", sender: self)
+        
+    }
+
+
+    @objc func openGetAround(_ sender: UIImageView){
+
+        performSegue(withIdentifier: "trymapkit", sender: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -47,6 +72,23 @@ class CityDetailViewController: UIViewController {
             let detailView = segue.destination as! ThingsToDoViewController
             detailView.tappedCity = tappedCity
         }
+        
+     /*   if(segue.identifier == "getaaround") {
+            let detailView = segue.destination as! GetAroundViewController
+            detailView.city = tappedCity?.name as! String
+        }
+   */
+        if(segue.identifier == "trymapkit") {
+            let detailView = segue.destination as! MapKitViewController
+            detailView.city = tappedCity?.name as! String
+        }
+        
+        if(segue.identifier == "experiences") {
+            let detailView = segue.destination as! CityExperiencesViewController
+            detailView.city = tappedCity?.name as! String
+        }
+ 
+      
     }
     
 

@@ -15,13 +15,15 @@ class Objectiv {
     var featuredImageURL: URL
     var color: UIColor
     var description: String
+    var location: Location
     
-    init(title: String, featuredImage: URL, color: UIColor, description:String )
+    init(title: String, featuredImage: URL, color: UIColor, description:String, location:Location )
     {
         self.title = title
         self.featuredImageURL = featuredImage
         self.color = color
         self.description = description
+        self.location = location
     }
     
     // MARK: - Private

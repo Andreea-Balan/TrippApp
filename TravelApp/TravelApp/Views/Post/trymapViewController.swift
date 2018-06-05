@@ -75,21 +75,7 @@ class trymapViewController: UIViewController, UISearchBarDelegate, LocateOnTheMa
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
       
-        /*let placeClient = GMSPlacesClient()
-        placeClient.autocompleteQuery(searchText, bounds: nil, filter: nil){ (results, error: NSError)  -> Void in
-            
-            self.resultsArray.removeAll()
-            if results == nil {
-                return
-        
-            for result in results! {
-                if let res = result as? GMSAutocompletePrediction {
-                    self.resultsArray.append()
-                
-            }
-            self.searchResultController.reloadDataWithArray(self.resultsArray)
-        }
- */
+
         self.resultsArray.removeAll()
         gmsFetcher?.sourceTextHasChanged(searchText)
         
