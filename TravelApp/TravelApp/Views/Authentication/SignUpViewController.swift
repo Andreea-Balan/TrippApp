@@ -211,7 +211,8 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
             "photoURL" : profileImageURL.absoluteString,
             "description": "",
             "phoneNumber": "",
-            "country": ""
+            "country": "",
+            "followers": "0"
         ] as [String: Any]
         print("Check2")
         databaseRef.setValue(userObject){ error, ref in

@@ -15,7 +15,7 @@ import GooglePlaces
 // UIColor(red:0.60, green:0.68, blue:0.90, alpha:1.0)
 let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 180/255, alpha: 1)
 let secondaryColor = UIColor(red: 52/255, green: 148/255, blue: 230/255, alpha: 1)
-
+let googleApiKey = "AIzaSyCnlKSC3PcYs0T9NHz6wPGbeTfllCOPjuY"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

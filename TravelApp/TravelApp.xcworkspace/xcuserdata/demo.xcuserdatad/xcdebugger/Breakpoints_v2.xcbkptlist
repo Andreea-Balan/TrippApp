@@ -74,7 +74,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/AppDelegate.swift"
-            timestampString = "549466813.85155"
+            timestampString = "550069429.98488"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -138,7 +138,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/AppDelegate.swift"
-            timestampString = "549466813.851927"
+            timestampString = "550069429.985563"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -154,7 +154,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/AppDelegate.swift"
-            timestampString = "549466813.8521709"
+            timestampString = "550069429.986044"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.9308929"
+            timestampString = "549901312.40213"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "264"
-            endingLineNumber = "264"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.931017"
+            timestampString = "549901312.402247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,7 +426,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/PostDetailsViewController.swift"
-            timestampString = "549898675.931275"
+            timestampString = "549993838.861544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -442,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.931666"
+            timestampString = "549901312.402558"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "224"
-            endingLineNumber = "224"
+            startingLineNumber = "225"
+            endingLineNumber = "225"
             landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.9317729"
+            timestampString = "549901312.402657"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -474,23 +474,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.9318759"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
-            landmarkName = "observePosts()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.9319789"
+            timestampString = "549901312.4027539"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "167"
@@ -506,11 +490,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.932084"
+            timestampString = "549901312.402849"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "216"
-            endingLineNumber = "216"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "observePosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Post/FirstViewController.swift"
+            timestampString = "549901312.4029551"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "217"
+            endingLineNumber = "217"
             landmarkName = "tableView(_:numberOfRowsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -586,7 +586,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/UserProfileViewController.swift"
-                  timestampString = "549896026.622633"
+                  timestampString = "550067373.541302"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -601,7 +601,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/UserProfileViewController.swift"
-                  timestampString = "549896026.62502"
+                  timestampString = "550067373.5435359"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "28"
@@ -650,7 +650,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Authentication/SignUpViewController.swift"
-            timestampString = "548105528.197841"
+            timestampString = "549901312.40317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "148"
@@ -666,7 +666,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Authentication/SignUpViewController.swift"
-            timestampString = "548105528.197901"
+            timestampString = "549901312.403227"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "207"
@@ -682,7 +682,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Authentication/SignUpViewController.swift"
-            timestampString = "548105528.197961"
+            timestampString = "549901312.403281"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "156"
@@ -714,11 +714,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.932375"
+            timestampString = "549901312.403357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "169"
-            endingLineNumber = "169"
+            startingLineNumber = "170"
+            endingLineNumber = "170"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -730,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.932485"
+            timestampString = "549901312.403452"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -746,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.932668"
+            timestampString = "549901312.403548"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "tableView(_:didDeselectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -762,11 +762,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.932786"
+            timestampString = "549901312.403645"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "276"
-            endingLineNumber = "276"
+            startingLineNumber = "277"
+            endingLineNumber = "277"
             landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -778,11 +778,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.932907"
+            timestampString = "549901312.403739"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "tableView(_:didSelectRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -794,7 +794,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-            timestampString = "549470026.174383"
+            timestampString = "549990924.37446"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -1082,7 +1082,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/MapKitViewController.swift"
-                  timestampString = "549896026.6968"
+                  timestampString = "550067373.613885"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "118"
@@ -1097,7 +1097,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/MapKitViewController.swift"
-                  timestampString = "549896026.6990989"
+                  timestampString = "550067373.616203"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "121"
@@ -1114,7 +1114,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-            timestampString = "549470026.175045"
+            timestampString = "549990924.375247"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
@@ -1130,7 +1130,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-                  timestampString = "549896026.704893"
+                  timestampString = "550067373.621896"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -1145,7 +1145,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-                  timestampString = "549896026.707357"
+                  timestampString = "550067373.624163"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -1162,7 +1162,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-            timestampString = "549470026.175332"
+            timestampString = "549990924.375492"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "83"
@@ -1178,7 +1178,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-                  timestampString = "549896026.71312"
+                  timestampString = "550067373.630007"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "83"
@@ -1193,7 +1193,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-                  timestampString = "549896026.715497"
+                  timestampString = "550067373.632504"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "83"
@@ -1274,7 +1274,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-            timestampString = "549470026.175683"
+            timestampString = "549990924.375838"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -1290,7 +1290,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-                  timestampString = "549896026.739677"
+                  timestampString = "550067373.656691"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "23"
@@ -1305,7 +1305,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CityDetailViewController.swift"
-                  timestampString = "549896026.7421989"
+                  timestampString = "550067373.658962"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "24"
@@ -1370,7 +1370,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CoverPhotoViewController.swift"
-                  timestampString = "549896026.7531821"
+                  timestampString = "550067373.669269"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -1385,7 +1385,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/CoverPhotoViewController.swift"
-                  timestampString = "549896026.7555569"
+                  timestampString = "550067373.672116"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
@@ -1402,11 +1402,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.93353"
+            timestampString = "549901312.404339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1450,7 +1450,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/ObjectivInfoViewController.swift"
-                  timestampString = "549896026.7665139"
+                  timestampString = "550067373.682694"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -1465,7 +1465,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/ObjectivInfoViewController.swift"
-                  timestampString = "549896026.768756"
+                  timestampString = "550067373.684926"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "29"
@@ -1480,7 +1480,7 @@
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/ObjectivInfoViewController.swift"
-                  timestampString = "549896026.770977"
+                  timestampString = "550067373.687251"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "30"
@@ -1497,7 +1497,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.933673"
+            timestampString = "549901312.404476"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "49"
@@ -1513,7 +1513,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.9337749"
+            timestampString = "549901312.404578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "80"
@@ -1529,7 +1529,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.933876"
+            timestampString = "549901312.40467"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -1545,7 +1545,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.933978"
+            timestampString = "549901312.404763"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "78"
@@ -1561,7 +1561,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.93408"
+            timestampString = "549901312.404856"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "74"
@@ -1577,11 +1577,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.934183"
+            timestampString = "549990924.376345"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "249"
-            endingLineNumber = "249"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1593,7 +1593,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/PostCollectionViewCell.swift"
-            timestampString = "549898675.935276"
+            timestampString = "549901312.406914"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
@@ -1609,7 +1609,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/PostCollectionViewCell.swift"
-            timestampString = "549898675.9353549"
+            timestampString = "549901312.406983"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -1625,7 +1625,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/PostCollectionViewCell.swift"
-            timestampString = "549898675.935429"
+            timestampString = "549901312.407057"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "79"
@@ -1641,7 +1641,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/PostCollectionViewCell.swift"
-            timestampString = "549898675.9355021"
+            timestampString = "549901312.407122"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "42"
@@ -1657,11 +1657,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.935572"
+            timestampString = "549901312.407184"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
+            startingLineNumber = "188"
+            endingLineNumber = "188"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1673,27 +1673,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.935661"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "182"
-            endingLineNumber = "182"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.9357491"
+            timestampString = "549901312.407264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "183"
             endingLineNumber = "183"
+            landmarkName = "collectionView(_:cellForItemAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Post/FirstViewController.swift"
+            timestampString = "549901312.4073631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
             <Locations>
@@ -1737,11 +1737,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Post/FirstViewController.swift"
-            timestampString = "549898675.935835"
+            timestampString = "549901312.407441"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
             landmarkName = "collectionView(_:cellForItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1753,11 +1753,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.93592"
+            timestampString = "549990924.376601"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "291"
-            endingLineNumber = "291"
+            startingLineNumber = "296"
+            endingLineNumber = "296"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1769,11 +1769,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.93678"
+            timestampString = "549990924.37666"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
             landmarkName = "PostAuthorDetailsViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -1785,11 +1785,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.937561"
+            timestampString = "549990924.376718"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "253"
-            endingLineNumber = "253"
+            startingLineNumber = "256"
+            endingLineNumber = "256"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1801,11 +1801,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.938357"
+            timestampString = "549990924.3767771"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "291"
+            endingLineNumber = "291"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1817,11 +1817,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.939096"
+            timestampString = "549990924.3768359"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "242"
+            endingLineNumber = "242"
             landmarkName = "observeLikedPosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1833,7 +1833,278 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.939821"
+            timestampString = "549990924.376892"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.376948"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377004"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.3770601"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377117"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "228"
+            endingLineNumber = "228"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.3771729"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "292"
+            endingLineNumber = "292"
+            landmarkName = "observePosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.37723"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377344"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "observeLikedPosts()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in TravelApp.PostAuthorDetailsViewController.observeLikedPosts() -&gt; ()"
+                  moduleName = "TravelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+                  timestampString = "550067373.726969"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "155"
+                  endingLineNumber = "155"
+                  offsetFromSymbolStart = "3209">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in closure #1 (__ObjC.DataSnapshot) -&gt; () in TravelApp.PostAuthorDetailsViewController.observeLikedPosts() -&gt; ()"
+                  moduleName = "TravelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+                  timestampString = "550067373.729268"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "102"
+                  endingLineNumber = "102"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Post/PostDetailsViewController.swift"
+            timestampString = "549993838.863431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377517"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TravelApp.PostAuthorDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TravelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+                  timestampString = "549987722.0215501"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "853">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TravelApp.PostAuthorDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TravelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+                  timestampString = "549987722.0241179"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "11518">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__ObjC.UIImage&gt;) -&gt; () in TravelApp.PostAuthorDetailsViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "TravelApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+                  timestampString = "549987722.026669"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.377575"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "104"
@@ -1849,59 +2120,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.940539"
+            timestampString = "549990924.377633"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
-            landmarkName = "observeLikedPosts()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.941255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
-            landmarkName = "observeLikedPosts()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.941977"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
-            landmarkName = "observeLikedPosts()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.942688"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "225"
-            endingLineNumber = "225"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "observeLikedPosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1913,11 +2136,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.943416"
+            timestampString = "549990924.377691"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "288"
-            endingLineNumber = "288"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "observePosts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
+            timestampString = "549990924.37775"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
             landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1929,12 +2168,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.944105"
+            timestampString = "549990924.377807"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
-            landmarkName = "observeLikedPosts()"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1945,12 +2184,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.944784"
+            timestampString = "549990924.377864"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "132"
-            endingLineNumber = "132"
-            landmarkName = "observeLikedPosts()"
+            startingLineNumber = "294"
+            endingLineNumber = "294"
+            landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1961,12 +2200,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.945401"
+            timestampString = "549990924.37792"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
-            landmarkName = "observeLikedPosts()"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
+            landmarkName = "observePosts()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1976,46 +2215,190 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-            timestampString = "549898675.9460059"
+            filePath = "TravelApp/Views/MoreInfo/PlaceMarker.swift"
+            timestampString = "550069429.989385"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "153"
-            endingLineNumber = "153"
-            landmarkName = "observeLikedPosts()"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "init(place:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Models/GoogleDataProvider.swift"
+            timestampString = "550069429.9894561"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "fetchPlacesNearCoordinate(_:radius:types:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/PlaceMarker.swift"
+            timestampString = "550069429.989554"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init(place:)"
             landmarkType = "7">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in TravelApp.PostAuthorDetailsViewController.observeLikedPosts() -&gt; ()"
+                  symbolName = "TravelApp.PlaceMarker.__allocating_init(place: TravelApp.GooglePlace) -&gt; TravelApp.PlaceMarker"
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-                  timestampString = "549896026.811115"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/PlaceMarker.swift"
+                  timestampString = "550067373.753584"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "153"
-                  endingLineNumber = "153"
-                  offsetFromSymbolStart = "3219">
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__ObjC.DataSnapshot) -&gt; () in closure #1 (__ObjC.DataSnapshot) -&gt; () in TravelApp.PostAuthorDetailsViewController.observeLikedPosts() -&gt; ()"
+                  symbolName = "TravelApp.PlaceMarker.init(place: TravelApp.GooglePlace) -&gt; TravelApp.PlaceMarker"
                   moduleName = "TravelApp"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/Profile/PostAuthorDetailsViewController.swift"
-                  timestampString = "549896026.81355"
+                  urlString = "file:///Users/demo/Desktop/Andreea%20Balan/Licenta/TripApp/TravelApp/TravelApp/Views/MoreInfo/PlaceMarker.swift"
+                  timestampString = "550067373.7558579"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "155"
-                  endingLineNumber = "155"
-                  offsetFromSymbolStart = "15">
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "29">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/FeedMeViewController.swift"
+            timestampString = "550069429.9896539"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "fetchNearbyPlaces(coordinate:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/FeedMeViewController.swift"
+            timestampString = "550069429.989983"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "147"
+            endingLineNumber = "147"
+            landmarkName = "locationManager(_:didUpdateLocations:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/FeedMeViewController.swift"
+            timestampString = "550069429.9902461"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "98"
+            endingLineNumber = "98"
+            landmarkName = "typesController(_:didSelectTypes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/TypesTableViewController.swift"
+            timestampString = "550069429.990509"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "donePressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/FeedMeViewController.swift"
+            timestampString = "550069429.990567"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "typesController(_:didSelectTypes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/FeedMeViewController.swift"
+            timestampString = "550069429.990827"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "typesController(_:didSelectTypes:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TravelApp/Views/MoreInfo/FeedMeViewController.swift"
+            timestampString = "550069429.9910769"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

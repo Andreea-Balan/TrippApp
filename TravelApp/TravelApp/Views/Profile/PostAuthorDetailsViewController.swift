@@ -24,6 +24,7 @@ class PostAuthorDetailsViewController: UIViewController, UICollectionViewDelegat
     @IBOutlet weak var likedColectionView: UICollectionView!
     @IBOutlet weak var userCountry: UILabel!
     @IBOutlet weak var editProfileButton: UIButton!
+    @IBOutlet weak var fallowLabel: UILabel!
     
     var tappedPost: Post?
     var posts = [Post]()
@@ -45,6 +46,7 @@ class PostAuthorDetailsViewController: UIViewController, UICollectionViewDelegat
             userName.text = (post?.author.firstname)! + " " + (post?.author.lastname)!
             userCountry.text = (post?.author.country)!
             userDescription.text = (post?.author.description)!
+            fallowLabel.text = String((post?.author.followers)!) + " followers"
         }
         else {
             
@@ -170,10 +172,11 @@ class PostAuthorDetailsViewController: UIViewController, UICollectionViewDelegat
                         let phoneNumber = author["phoneNumber"] as? String,
                         let authorDescription = author["description"] as? String,
                         let country = author["country"] as? String,
+                        let followers = author["followers"] as? Int,
                         let authorPhotoURL = author["photoURL"] as? String,
                         let authorURL = URL(string: authorPhotoURL){
                         print(city)
-                        let authorProfile = User(uid: uid, lastname: lastname, firstname: firstname, photoURL: authorURL, phoneNumber: phoneNumber,description: authorDescription,  country: country)
+                        let authorProfile = User(uid: uid, lastname: lastname, firstname: firstname, photoURL: authorURL, phoneNumber: phoneNumber,description: authorDescription,  country: country, followers: followers)
                         
                         let post =  Post(id: childSnapshot.key, author: authorProfile, category: category, title: title, price: Int(price)!, location: city,  description: description, locationAddress: location ,timestamp: timestamp, photoURL: postURL)
                         temporaryPosts.append(post)
@@ -279,13 +282,15 @@ class PostAuthorDetailsViewController: UIViewController, UICollectionViewDelegat
                     let phoneNumber = author["phoneNumber"] as? String,
                     let authorDescription = author["description"] as? String,
                     let country = author["country"] as? String,
+                    let followers = author["followers"] as? Int,
                     let authorPhotoURL = author["photoURL"] as? String,
                     let authorURL = URL(string: authorPhotoURL) {
                     
-                    let authorProfile = User(uid: uid, lastname: lastname, firstname: firstname, photoURL: authorURL, phoneNumber: phoneNumber,description: authorDescription,  country: country)
+                    let authorProfile = User(uid: uid, lastname: lastname, firstname: firstname, photoURL: authorURL, phoneNumber: phoneNumber,description: authorDescription,  country: country, followers: 45)
                     
                     let post =  Post(id: childSnapshot.key, author: authorProfile, category: category, title: title, price: Int(price)!, location: city,  description: description, locationAddress: location ,timestamp: timestamp, photoURL: postURL)
                     temporaryPosts.append(post)
+                    print(temporaryPosts)
                 }
             }
             self.posts = temporaryPosts
@@ -303,10 +308,12 @@ class PostAuthorDetailsViewController: UIViewController, UICollectionViewDelegat
         //just for test
         if(!fallow){
         followImage.image = UIImage(named: "heart_after")
+            fallowLabel.text = String((post?.author.followers)! + 1) + " followers"
             fallow = true
         }
         else {
             followImage.image = UIImage(named: "heart")
+            fallowLabel.text = String((post?.author.followers)!) + " followers"
             fallow = false
         }
 

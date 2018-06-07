@@ -48,11 +48,18 @@
 		B4A2C1BC20AC9E9F00E395B6 /* Objectiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2C1BB20AC9E9F00E395B6 /* Objectiv.swift */; };
 		B4B8234C209DB89E0088304D /* trymapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8234B209DB89E0088304D /* trymapViewController.swift */; };
 		B4B8234E209DBB920088304D /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8234D209DBB920088304D /* SearchResultsController.swift */; };
+		B4B856EF20C82CFD00DCD35D /* FeedMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B856EE20C82CFD00DCD35D /* FeedMeViewController.swift */; };
+		B4B856F120C82D8900DCD35D /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B856F020C82D8900DCD35D /* TypesTableViewController.swift */; };
 		B4BF376F2081FC4300FDA0BE /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */; };
 		B4BF37702081FC4300FDA0BE /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */; };
 		B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF37712082021500FDA0BE /* FirstViewController.swift */; };
 		B4BF377620823ACA00FDA0BE /* NewPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */; };
 		B4CA58D120B7291300D1B030 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CA58D020B7291300D1B030 /* RootPageViewController.swift */; };
+		B4EEFF7120C94AD000A788A8 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4EEFF6F20C94ACF00A788A8 /* MarkerInfoView.xib */; };
+		B4EEFF7220C94AD000A788A8 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEFF7020C94AD000A788A8 /* MarkerInfoView.swift */; };
+		B4EEFF7420C94CD100A788A8 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEFF7320C94CD100A788A8 /* PlaceMarker.swift */; };
+		B4EEFF7620C9505200A788A8 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEFF7520C9505200A788A8 /* GooglePlace.swift */; };
+		B4EEFF7820C9507200A788A8 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4EEFF7720C9507200A788A8 /* GoogleDataProvider.swift */; };
 		B4F7C9A620A498A8002E54D7 /* PostAuthorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F7C9A520A498A8002E54D7 /* PostAuthorDetailsViewController.swift */; };
 		FE8A0EDABA3C08B20DCEF79F /* Pods_TravelAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADE24936A21C99D717013CF /* Pods_TravelAppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -127,11 +134,18 @@
 		B4A2C1BB20AC9E9F00E395B6 /* Objectiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objectiv.swift; sourceTree = "<group>"; };
 		B4B8234B209DB89E0088304D /* trymapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trymapViewController.swift; sourceTree = "<group>"; };
 		B4B8234D209DBB920088304D /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
+		B4B856EE20C82CFD00DCD35D /* FeedMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMeViewController.swift; sourceTree = "<group>"; };
+		B4B856F020C82D8900DCD35D /* TypesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
 		B4BF376D2081FC4300FDA0BE /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4BF376E2081FC4300FDA0BE /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		B4BF37712082021500FDA0BE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		B4BF377520823ACA00FDA0BE /* NewPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPostViewController.swift; sourceTree = "<group>"; };
 		B4CA58D020B7291300D1B030 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
+		B4EEFF6F20C94ACF00A788A8 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		B4EEFF7020C94AD000A788A8 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		B4EEFF7320C94CD100A788A8 /* PlaceMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		B4EEFF7520C9505200A788A8 /* GooglePlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		B4EEFF7720C9507200A788A8 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		B4F7C9A520A498A8002E54D7 /* PostAuthorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostAuthorDetailsViewController.swift; sourceTree = "<group>"; };
 		DDECD9828AD56C05ECDB68C9 /* Pods-TravelAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelAppTests/Pods-TravelAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FBC3901F979F9C9C1F17A6E8 /* Pods-TravelApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -286,6 +300,8 @@
 				B4A2C1BB20AC9E9F00E395B6 /* Objectiv.swift */,
 				B49D9B6E20B043720017D5CB /* City.swift */,
 				B41E43D520B1640A008D1B61 /* Location.swift */,
+				B4EEFF7520C9505200A788A8 /* GooglePlace.swift */,
+				B4EEFF7720C9507200A788A8 /* GoogleDataProvider.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,6 +370,8 @@
 		B4A2C1B420AC878300E395B6 /* MoreInfo */ = {
 			isa = PBXGroup;
 			children = (
+				B4EEFF7020C94AD000A788A8 /* MarkerInfoView.swift */,
+				B4EEFF6F20C94ACF00A788A8 /* MarkerInfoView.xib */,
 				B4A2C1B520AC879E00E395B6 /* CityDetailViewController.swift */,
 				B4A2C1B720AC8CCE00E395B6 /* ThingsToDoViewController.swift */,
 				B4A2C1B920AC9CDD00E395B6 /* cityCollectionViewCell.swift */,
@@ -363,6 +381,9 @@
 				B40F8B8320BEFCC00014945D /* CoverPhotoViewController.swift */,
 				B40F8B8520BF0BC00014945D /* ObjectivInfoViewController.swift */,
 				B42A8F2320C0072800CF072F /* CityExperiencesViewController.swift */,
+				B4B856EE20C82CFD00DCD35D /* FeedMeViewController.swift */,
+				B4B856F020C82D8900DCD35D /* TypesTableViewController.swift */,
+				B4EEFF7320C94CD100A788A8 /* PlaceMarker.swift */,
 			);
 			path = MoreInfo;
 			sourceTree = "<group>";
@@ -484,6 +505,7 @@
 				B4BF37702081FC4300FDA0BE /* PostCollectionViewCell.xib in Resources */,
 				4594C772205EEFEC00E3AA5B /* Assets.xcassets in Resources */,
 				4594C770205EEFEC00E3AA5B /* Main.storyboard in Resources */,
+				B4EEFF7120C94AD000A788A8 /* MarkerInfoView.xib in Resources */,
 				B46C5DF9208604A500BCA34E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +573,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GooglePlacesSearchController/GooglePlacesSearchController.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -559,6 +582,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesSearchController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -612,6 +636,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4EEFF7220C94AD000A788A8 /* MarkerInfoView.swift in Sources */,
 				B45AD031207F9A220056481E /* PostTableViewCell.swift in Sources */,
 				B42A8F2420C0072800CF072F /* CityExperiencesViewController.swift in Sources */,
 				B40087A220A9E94A0083A7B9 /* UserProfileViewController.swift in Sources */,
@@ -626,11 +651,14 @@
 				B46C3A7120A33D1B0055E587 /* cityNameTableViewCell.swift in Sources */,
 				B46C5DED2083F13E00BCA34E /* User.swift in Sources */,
 				45B6EEE02068224800A380F5 /* SignUpViewController.swift in Sources */,
+				B4B856EF20C82CFD00DCD35D /* FeedMeViewController.swift in Sources */,
 				B4B8234E209DBB920088304D /* SearchResultsController.swift in Sources */,
 				4594C79F205EF92300E3AA5B /* RoundedWhiteButton.swift in Sources */,
 				B41E43D420B158B5008D1B61 /* GetAroundViewController.swift in Sources */,
 				B40F8B8820BF200D0014945D /* PinAnnotation.swift in Sources */,
+				B4EEFF7620C9505200A788A8 /* GooglePlace.swift in Sources */,
 				B4A2C1B820AC8CCE00E395B6 /* ThingsToDoViewController.swift in Sources */,
+				B4EEFF7820C9507200A788A8 /* GoogleDataProvider.swift in Sources */,
 				4594C7A4205F0F0A00E3AA5B /* LogInViewController.swift in Sources */,
 				459620B6206D1D9500E342B6 /* HomeViewController.swift in Sources */,
 				B4BF376F2081FC4300FDA0BE /* PostCollectionViewCell.swift in Sources */,
@@ -639,6 +667,7 @@
 				B4A2C1BA20AC9CDD00E395B6 /* cityCollectionViewCell.swift in Sources */,
 				B46C5DF02083F33A00BCA34E /* userService.swift in Sources */,
 				B40F8B8620BF0BC00014945D /* ObjectivInfoViewController.swift in Sources */,
+				B4EEFF7420C94CD100A788A8 /* PlaceMarker.swift in Sources */,
 				B46C5DFB20860C6000BCA34E /* ImageService.swift in Sources */,
 				4594C79C205EF1FF00E3AA5B /* MenuViewController.swift in Sources */,
 				B49D9B6F20B043720017D5CB /* City.swift in Sources */,
@@ -646,6 +675,7 @@
 				B4BF37722082021500FDA0BE /* FirstViewController.swift in Sources */,
 				B46C3A7320A352220055E587 /* CustomSearchBar.swift in Sources */,
 				B41E43D620B1640A008D1B61 /* Location.swift in Sources */,
+				B4B856F120C82D8900DCD35D /* TypesTableViewController.swift in Sources */,
 				B4CA58D120B7291300D1B030 /* RootPageViewController.swift in Sources */,
 				B4BF377620823ACA00FDA0BE /* NewPostViewController.swift in Sources */,
 				B4A2C1B620AC879E00E395B6 /* CityDetailViewController.swift in Sources */,

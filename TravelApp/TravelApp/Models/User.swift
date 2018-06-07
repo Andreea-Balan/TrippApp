@@ -16,9 +16,10 @@ class User {
     var phoneNumber: String
     var description: String
     var country: String
+    var followers: Int
     
     
-    init(uid: String, lastname:String, firstname:String,photoURL:URL,phoneNumber: String,description: String, country:String) {
+    init(uid: String, lastname:String, firstname:String,photoURL:URL,phoneNumber: String,description: String, country:String, followers: Int) {
         self.uid = uid
         self.lastname = lastname
         self.firstname = firstname
@@ -26,6 +27,7 @@ class User {
         self.phoneNumber = phoneNumber
         self.description = description
         self.country = country
+        self.followers = followers
     }
     
     

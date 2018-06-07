@@ -14,6 +14,9 @@ target 'TravelApp' do
   pod 'GoogleMaps'
   pod 'GooglePlacesSearchController'
   pod 'GooglePlaces'
+  pod 'SwiftyJSON', :git =>'https://github.com/SwiftyJSON/SwiftyJSON.git'
+  pod 'RNCryptor', '~> 5.0'
+  pod 'CryptoSwift'
 
   target 'TravelAppTests' do
     inherit! :search_paths

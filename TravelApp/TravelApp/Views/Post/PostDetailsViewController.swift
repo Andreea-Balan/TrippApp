@@ -45,12 +45,12 @@ class PostDetailsViewController: UIViewController, LocateOnTheMap {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-    postOverview.translatesAutoresizingMaskIntoConstraints = true
+     postOverview.translatesAutoresizingMaskIntoConstraints = true
         
-        postOverview.sizeToFit()
+     postOverview.sizeToFit()
         
-        postOverview.isScrollEnabled = false
-        ImageService.getImage(withURL: post.photoURL) { image in
+     postOverview.isScrollEnabled = false
+     ImageService.getImage(withURL: post.photoURL) { image in
             self.postImage.image = image
         }
         self.postTitle.text = post.title

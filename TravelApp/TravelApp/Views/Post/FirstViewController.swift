@@ -92,6 +92,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
                     let author = dict["author"] as? [String:Any],
                     let uid = author["userId"] as? String,
                     let lastname = author["lastname"] as? String,
+                    let followers = author["followers"] as? Int,
                     let firstname = author["firstname"] as? String,
                     let phoneNumber = author["phoneNumber"] as? String,
                     let authorDescription = author["description"] as? String,
@@ -99,7 +100,7 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
                     let authorPhotoURL = author["photoURL"] as? String,
                     let authorURL = URL(string: authorPhotoURL) {
                         
-                    let authorProfile = User(uid: uid, lastname: lastname, firstname: firstname, photoURL: authorURL, phoneNumber: phoneNumber,description: authorDescription,  country: country)
+                    let authorProfile = User(uid: uid, lastname: lastname, firstname: firstname, photoURL: authorURL, phoneNumber: phoneNumber,description: authorDescription,  country: country, followers: followers)
                     
                     let post =  Post(id: childSnapshot.key, author: authorProfile, category: category, title: title, price: Int(price)!, location: city,  description: description, locationAddress: location ,timestamp: timestamp, photoURL: postURL)
                     temporaryPosts.append(post)
