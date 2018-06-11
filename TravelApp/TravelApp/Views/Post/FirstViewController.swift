@@ -121,6 +121,9 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
             var urls = [URL]()
             var color = UIColor()
             for child in snapshot.children {
+                temporaryObjectives.removeAll()
+                //temporatyCity.removeAll()
+                urls.removeAll()
                 if let childSnap = child as? DataSnapshot,
                 let dict = childSnap.value as? [String:Any],
                 
@@ -233,6 +236,11 @@ class FirstViewController: UIViewController,UICollectionViewDelegate,UICollectio
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("here")
         tappedCity = filterCities[indexPath.row]
+        
+        
+       // cityRef = Database.database().reference().child("cities").queryOrdered(byChild: "name").queryEqual(toValue: filterCities[indexPath.row].name)
+        
+        
         self.performSegue(withIdentifier: "citydetails", sender: self)
     }
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {

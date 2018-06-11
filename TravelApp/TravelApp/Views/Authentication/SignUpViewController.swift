@@ -9,6 +9,8 @@
 import UIKit
 import Firebase
 import FirebaseStorage
+import CryptoSwift
+import RNCryptor
 
 class SignUpViewController: UIViewController,UITextFieldDelegate {
 
@@ -127,6 +129,8 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     }
     
     @objc func handleSignUp() {
+        
+        
         guard let lastname = lastNameField.text else { return }
         guard let firstname = firstNameField.text else { return }
         guard let email = emailField.text else { return }
@@ -202,8 +206,11 @@ class SignUpViewController: UIViewController,UITextFieldDelegate {
     
     func saveProfile(lastname: String,firstname: String, profileImageURL : URL, completion: @escaping((_ success:Bool)->())) {
         
+        //let lname = try! lastname.aesEncypt(ke)
         guard let uid = Auth.auth().currentUser?.uid else { return }
         let databaseRef = Database.database().reference().child("users/profile/\(uid)")
+        
+        //let encryptedLN = lastname.aesEncrypted(
         print("Check1")
         let userObject = [
             "lastname" : lastname,

@@ -46,6 +46,8 @@
 		B4A2C1B820AC8CCE00E395B6 /* ThingsToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2C1B720AC8CCE00E395B6 /* ThingsToDoViewController.swift */; };
 		B4A2C1BA20AC9CDD00E395B6 /* cityCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2C1B920AC9CDD00E395B6 /* cityCollectionViewCell.swift */; };
 		B4A2C1BC20AC9E9F00E395B6 /* Objectiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A2C1BB20AC9E9F00E395B6 /* Objectiv.swift */; };
+		B4B13D6520CE8E4100EBFD12 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B13D6420CE8E4000EBFD12 /* FBSDKCoreKit.framework */; };
+		B4B13D6720CE8E5A00EBFD12 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4B13D6620CE8E5A00EBFD12 /* FBSDKLoginKit.framework */; };
 		B4B8234C209DB89E0088304D /* trymapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8234B209DB89E0088304D /* trymapViewController.swift */; };
 		B4B8234E209DBB920088304D /* SearchResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B8234D209DBB920088304D /* SearchResultsController.swift */; };
 		B4B856EF20C82CFD00DCD35D /* FeedMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B856EE20C82CFD00DCD35D /* FeedMeViewController.swift */; };
@@ -132,6 +134,8 @@
 		B4A2C1B720AC8CCE00E395B6 /* ThingsToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsToDoViewController.swift; sourceTree = "<group>"; };
 		B4A2C1B920AC9CDD00E395B6 /* cityCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cityCollectionViewCell.swift; sourceTree = "<group>"; };
 		B4A2C1BB20AC9E9F00E395B6 /* Objectiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objectiv.swift; sourceTree = "<group>"; };
+		B4B13D6420CE8E4000EBFD12 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		B4B13D6620CE8E5A00EBFD12 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B4B8234B209DB89E0088304D /* trymapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trymapViewController.swift; sourceTree = "<group>"; };
 		B4B8234D209DBB920088304D /* SearchResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsController.swift; sourceTree = "<group>"; };
 		B4B856EE20C82CFD00DCD35D /* FeedMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedMeViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				48829C9505F15414C909A25A /* Pods_TravelApp.framework in Frameworks */,
+				B4B13D6520CE8E4100EBFD12 /* FBSDKCoreKit.framework in Frameworks */,
+				B4B13D6720CE8E5A00EBFD12 /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,6 +218,8 @@
 				4594C76A205EEFEC00E3AA5B /* AppDelegate.swift */,
 				4594C76C205EEFEC00E3AA5B /* ViewController.swift */,
 				4594C771205EEFEC00E3AA5B /* Assets.xcassets */,
+				B4B13D6620CE8E5A00EBFD12 /* FBSDKLoginKit.framework */,
+				B4B13D6420CE8E4000EBFD12 /* FBSDKCoreKit.framework */,
 				4594C776205EEFEC00E3AA5B /* Info.plist */,
 			);
 			path = TravelApp;
@@ -349,6 +357,7 @@
 			isa = PBXGroup;
 			children = (
 				B45AD030207F9A220056481E /* PostTableViewCell.xib */,
+				B41E43D320B158B5008D1B61 /* GetAroundViewController.swift */,
 				B45AD02F207F9A220056481E /* PostTableViewCell.swift */,
 			);
 			path = ToDelete;
@@ -375,7 +384,6 @@
 				B4A2C1B520AC879E00E395B6 /* CityDetailViewController.swift */,
 				B4A2C1B720AC8CCE00E395B6 /* ThingsToDoViewController.swift */,
 				B4A2C1B920AC9CDD00E395B6 /* cityCollectionViewCell.swift */,
-				B41E43D320B158B5008D1B61 /* GetAroundViewController.swift */,
 				B41E43D720B1C034008D1B61 /* MapKitViewController.swift */,
 				B4CA58D020B7291300D1B030 /* RootPageViewController.swift */,
 				B40F8B8320BEFCC00014945D /* CoverPhotoViewController.swift */,
@@ -570,18 +578,24 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TravelApp/Pods-TravelApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GooglePlacesSearchController/GooglePlacesSearchController.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GooglePlacesSearchController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
@@ -847,6 +861,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VJN5QFXAE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TravelApp",
+				);
 				INFOPLIST_FILE = TravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TravelApp;
@@ -863,6 +881,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9VJN5QFXAE;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TravelApp",
+				);
 				INFOPLIST_FILE = TravelApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TravelApp;

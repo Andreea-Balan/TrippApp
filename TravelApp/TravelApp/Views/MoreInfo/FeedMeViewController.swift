@@ -10,7 +10,7 @@ import UIKit
 import GoogleMaps
 
 class FeedMeViewController: UIViewController {
-
+    var tappedCity: City?
     private let dataProvider = GoogleDataProvider()
     private let searchRadius: Double = 1000
     @IBOutlet weak var addressLabel: UILabel!
@@ -28,17 +28,34 @@ class FeedMeViewController: UIViewController {
         mapView.delegate = self
     }
     
+    @IBAction func doneButton(_ sender: Any) {
+    
+      self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func refreshPlaces(_ sender: Any) {
         fetchNearbyPlaces(coordinate: mapView.camera.target)
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "goback") {
+            
+        
+      
+            let detailView = segue.destination as! CityDetailViewController
+            detailView.tappedCity = self.tappedCity
+           
+        }else{
         guard let navigationController = segue.destination as? UINavigationController,
             let controller = navigationController.topViewController as? TypesTableViewController else {
                 return
         }
         controller.selectedTypes = searchedTypes
         controller.delegate = self
+        }
+        
+        
     }
     private func fetchNearbyPlaces(coordinate: CLLocationCoordinate2D) {
         // 1
@@ -114,8 +131,48 @@ extension FeedMeViewController: GMSMapViewDelegate {
     
     func mapView(_ mapView: GMSMapView, willMove gesture: Bool) {
         addressLabel.lock()
+        if (gesture) {
+            mapCenterPinImage.fadeIn(0.25)
+            mapView.selectedMarker = nil
+        }
     }
     
+    func mapView(_ mapView: GMSMapView, markerInfoContents marker: GMSMarker) -> UIView? {
+        // 1
+        guard let placeMarker = marker as? PlaceMarker else {
+            return nil
+        }
+        
+        // 2
+        guard let infoView = UIView.viewFromNibName("MarkerInfoView") as? MarkerInfoView else {
+            return nil
+        }
+        
+        // 3
+        infoView.nameLabel.text = placeMarker.place.name
+        
+        // 4
+        if let photo = placeMarker.place.photo {
+            infoView.placePhoto.image = photo
+        } else {
+            infoView.placePhoto.image = UIImage(named: "generic")
+        }
+        
+        return infoView
+    }
+   
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        mapCenterPinImage.fadeOut(0.25)
+        return false
+    }
+    
+    func didTapMyLocationButton(for mapView: GMSMapView) -> Bool {
+        mapCenterPinImage.fadeIn(0.25)
+        mapView.selectedMarker = nil
+        return false
+    }
+
+  
 }
 
 extension FeedMeViewController: CLLocationManagerDelegate {
@@ -147,6 +204,7 @@ extension FeedMeViewController: CLLocationManagerDelegate {
         
         fetchNearbyPlaces(coordinate: location.coordinate)
     }
+    
     
     
 }

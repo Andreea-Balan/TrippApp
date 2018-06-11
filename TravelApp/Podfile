@@ -11,12 +11,13 @@ target 'TravelApp' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
+  pod 'Firebase/Messaging'
   pod 'GoogleMaps'
   pod 'GooglePlacesSearchController'
   pod 'GooglePlaces'
   pod 'SwiftyJSON', :git =>'https://github.com/SwiftyJSON/SwiftyJSON.git'
   pod 'RNCryptor', '~> 5.0'
-  pod 'CryptoSwift'
+  pod 'CryptoSwift', :git => "https://github.com/krzyzanowskim/CryptoSwift", :branch => "master"
 
   target 'TravelAppTests' do
     inherit! :search_paths

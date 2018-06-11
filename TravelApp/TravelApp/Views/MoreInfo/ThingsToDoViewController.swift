@@ -14,6 +14,7 @@ class ThingsToDoViewController: UIViewController {
     @IBOutlet weak var slideShowImage3: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var cityLabel: UILabel!
     var tappedCity: City?
     var objectives = [Objectiv]()
     var tappedObjective: Objectiv?
@@ -26,6 +27,8 @@ class ThingsToDoViewController: UIViewController {
         slideShowImage1.alpha = 1
         slideShowImage2.alpha = 0
         slideShowImage3.alpha = 0
+        cityLabel.text = tappedCity?.name.uppercased()
+        
        
         ImageService.getImage(withURL: (tappedCity?.photoURL[1])!) { image in
             self.slideShowImage1.image = image

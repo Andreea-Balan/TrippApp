@@ -10,6 +10,7 @@ import UIKit
 
 class CityDetailViewController: UIViewController {
 
+    @IBOutlet weak var foodImage: UIImageView!
     @IBOutlet weak var experiencesImage: UIImageView!
     @IBOutlet weak var getAroundImage: UIImageView!
     @IBOutlet weak var cityImage: UIImageView!
@@ -31,17 +32,21 @@ class CityDetailViewController: UIViewController {
         thingsToDoImage.clipsToBounds = true
         experiencesImage.layer.cornerRadius = experiencesImage.bounds.height / 2
         experiencesImage.clipsToBounds = true
+        foodImage.layer.cornerRadius = experiencesImage.bounds.height / 2
+        foodImage.clipsToBounds = true
         
         let imageTap1 = UITapGestureRecognizer(target: self, action: #selector(openThingToDo))
         let imageTap2 = UITapGestureRecognizer(target: self, action: #selector(openGetAround))
         let imageTap3 = UITapGestureRecognizer(target: self, action: #selector(openExperiences))
+        let imageTap4 = UITapGestureRecognizer(target: self, action: #selector(openFood))
         thingsToDoImage.isUserInteractionEnabled = true
         getAroundImage.isUserInteractionEnabled = true
         experiencesImage.isUserInteractionEnabled = true
+        foodImage.isUserInteractionEnabled = true
         thingsToDoImage.addGestureRecognizer(imageTap1)
         getAroundImage.addGestureRecognizer(imageTap2)
         experiencesImage.addGestureRecognizer(imageTap3)
-        
+        foodImage.addGestureRecognizer(imageTap4)
     }
 
     @objc func openThingToDo(_ sender: UIImageView){
@@ -51,6 +56,12 @@ class CityDetailViewController: UIViewController {
       
     }
 
+    @objc func openFood(_ sender: UIImageView){
+        
+        // if( sender.restorationIdentifier == "thingtodo"){
+        performSegue(withIdentifier: "foodanddrinks", sender: self)
+        
+    }
     @objc func openExperiences(_ sender: UIImageView){
         
         // if( sender.restorationIdentifier == "thingtodo"){
@@ -87,7 +98,12 @@ class CityDetailViewController: UIViewController {
             let detailView = segue.destination as! CityExperiencesViewController
             detailView.city = tappedCity?.name as! String
         }
- 
+        
+       if(segue.identifier == "foodanddrinks") {
+            let detailView = segue.destination as! FeedMeViewController
+            detailView.tappedCity = tappedCity
+        }
+
       
     }
     

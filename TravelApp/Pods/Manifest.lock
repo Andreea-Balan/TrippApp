@@ -1,4 +1,5 @@
 PODS:
+  - CryptoSwift (0.10.0)
   - Firebase/Auth (4.11.0):
     - Firebase/Core
     - FirebaseAuth (= 4.5.0)
@@ -8,6 +9,9 @@ PODS:
   - Firebase/Database (4.11.0):
     - Firebase/Core
     - FirebaseDatabase (= 4.1.5)
+  - Firebase/Messaging (4.11.0):
+    - Firebase/Core
+    - FirebaseMessaging (= 2.1.1)
   - Firebase/Storage (4.11.0):
     - Firebase/Core
     - FirebaseStorage (= 2.1.3)
@@ -28,6 +32,12 @@ PODS:
     - leveldb-library (~> 1.18)
   - FirebaseInstanceID (2.0.10):
     - FirebaseCore (~> 4.0)
+  - FirebaseMessaging (2.1.1):
+    - FirebaseAnalytics (~> 4.1)
+    - FirebaseCore (~> 4.0)
+    - FirebaseInstanceID (~> 2.0)
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - Protobuf (~> 3.5)
   - FirebaseStorage (2.1.3):
     - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
@@ -43,6 +53,8 @@ PODS:
   - GoogleToolboxForMac/DebugUtils (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - GoogleToolboxForMac/Defines (2.1.3)
+  - GoogleToolboxForMac/Logger (2.1.3):
+    - GoogleToolboxForMac/Defines (= 2.1.3)
   - "GoogleToolboxForMac/NSData+zlib (2.1.3)":
     - GoogleToolboxForMac/Defines (= 2.1.3)
   - "GoogleToolboxForMac/NSDictionary+URLArguments (2.1.3)":
@@ -57,16 +69,21 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - Protobuf (3.5.0)
+  - RNCryptor (5.0.3)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
+  - CryptoSwift (from `https://github.com/krzyzanowskim/CryptoSwift`, branch `master`)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - Firebase/Messaging
   - Firebase/Storage
   - GoogleMaps
   - GooglePlaces
   - GooglePlacesSearchController
+  - RNCryptor (~> 5.0)
   - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
 
 SPEC REPOS:
@@ -77,6 +94,7 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - FirebaseMessaging
     - FirebaseStorage
     - GoogleMaps
     - GooglePlaces
@@ -85,23 +103,33 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - Protobuf
+    - RNCryptor
 
 EXTERNAL SOURCES:
+  CryptoSwift:
+    :branch: master
+    :git: https://github.com/krzyzanowskim/CryptoSwift
   SwiftyJSON:
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 CHECKOUT OPTIONS:
+  CryptoSwift:
+    :commit: ea8c0769151d7d9587e1768094a517890114391e
+    :git: https://github.com/krzyzanowskim/CryptoSwift
   SwiftyJSON:
     :commit: b93c5d2bd883959262b4c7aabe333667dadb1ab0
     :git: https://github.com/SwiftyJSON/SwiftyJSON.git
 
 SPEC CHECKSUMS:
+  CryptoSwift: 6c778d69282bed3b4e975ff97a79d074f20bb011
   Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: 147bf340a0706b44ca1753d6b41ebafd9687cfe6
   FirebaseCore: b981f47e5254cbcfdeb483355300d743f6fcab2c
   FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
   FirebaseInstanceID: 8d20d890d65c917f9f7d9950b6e10a760ad34321
+  FirebaseMessaging: db0e01c52ef7e1f42846431273558107d084ede4
   FirebaseStorage: 9a863a2bb96c406958eeff7c2f1dfa9f44c44a13
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
@@ -110,8 +138,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 390ea358e5a0d0133153806f744662dad933d06b
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
+  RNCryptor: c93d19029dcf7ff160aca0f24d6c9e7b0d82f664
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: d2eb729646e470a8fbe650aed7760f16ee1bb3b7
+PODFILE CHECKSUM: 840139d21b165d2d49a9e971bd2dbd576bfb373c
 
 COCOAPODS: 1.5.0
